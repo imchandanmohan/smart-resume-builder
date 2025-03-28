@@ -1,7 +1,7 @@
 .PHONY: install test setup lint
 
 lint:
-	flake8 job_parser/ tests/
+	flake8 src/TextExtraction/ tests/
 
 install:
 	pip install --upgrade pip
