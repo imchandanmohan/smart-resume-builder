@@ -1,4 +1,8 @@
-.PHONY: install test setup
+.PHONY: install test setup lint
+
+
+lint:
+	flake8 job_parser/ tests/
 
 install:
 	pip install --upgrade pip

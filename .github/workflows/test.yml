@@ -24,6 +24,9 @@ jobs:
 
       - name: Run Setup
         run: make setup
+      
+      - name: Run Linter
+        run: make lint
 
       - name: Run Tests
         run: make test
