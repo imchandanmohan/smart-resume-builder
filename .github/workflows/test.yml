@@ -2,10 +2,9 @@ name: Run Tests
 
 on:
   push:
-    branches: [dev]
+    branches: [main, uat, prod, dev]
   pull_request:
-    branches: [dev]
-
+    branches: [main, uat, prod, dev]
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -19,22 +18,24 @@ jobs:
         with:
           auto-update-conda: true
           environment-file: environment.yml
-          activate-environment: smart-resume-builder-env  # Match 'name:' in your cleaned-up environment.yml
+          activate-environment: smart-resume-builder-env
           auto-activate-base: false
 
-      - name: Verify Environment
+      - name: Debug Conda Env
+        shell: bash -l {0}
         run: |
           which python
           python --version
           pip list
 
       - name: Install SpaCy model
-        run: |
-          source activate smart-resume-builder-env
-          python -m spacy download en_core_web_sm
+        shell: bash -l {0}
+        run: python -m spacy download en_core_web_sm
 
       - name: Run Linter
+        shell: bash -l {0}
         run: make lint
 
       - name: Run Tests
+        shell: bash -l {0}
         run: make test
