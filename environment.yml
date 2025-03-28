@@ -6,7 +6,6 @@ dependencies:
   - pip
   - pip:
       - spacy==3.8.4
-      - en-core-web-sm==3.8.0
       - pytest
       - flake8
       - streamlit==1.44.0
