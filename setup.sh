@@ -1,4 +1,2 @@
-#!/bin/bash
-
-echo "🔧 Downloading spaCy model..."
+# setup.sh
 python -m spacy download en_core_web_sm
