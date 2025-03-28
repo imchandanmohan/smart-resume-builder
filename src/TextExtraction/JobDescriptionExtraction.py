@@ -3,11 +3,18 @@ import spacy
 from typing import Dict, List, Union
 from collections import Counter
 
+
 class JobDescriptionParser:
     def __init__(self):
         self.nlp = spacy.load("en_core_web_sm")
 
-    def parse(self, job_text: str) -> Dict[str, Union[List[str], str, Dict[str, float]]]:
+    def parse(
+        self, 
+        job_text: str
+    ) -> Dict[
+        str, Union[List[str], str, Dict[str, float]]
+    ]:
+
         return {
             "job_title": self.extract_job_title(job_text),
             "company_name": self.extract_company_name(job_text),
@@ -23,7 +30,10 @@ class JobDescriptionParser:
         }
 
     def extract_job_title(self, text: str) -> str:
-        match = re.search(r'(Job Title[:\s]*)([A-Za-z\s]+)', text, re.IGNORECASE)
+        match = re.search(
+            r'(Job Title[:\s]*)([A-Za-z\s]+)',
+            text,
+            re.IGNORECASE)
         if match:
             return match.group(2).strip()
         return ""
@@ -54,7 +64,14 @@ class JobDescriptionParser:
         return responsibilities
 
     def extract_required_skills(self, text: str) -> List[str]:
-        skill_keywords = ["Python", "Java", "SQL", "communication", "teamwork", "leadership"]
+        skill_keywords = [
+            "Python",
+            "Java",
+            "SQL",
+            "communication",
+            "teamwork",
+            "leadership"
+        ]
         found_skills = [skill for skill in skill_keywords if re.search(fr"\b{skill}\b", text, re.IGNORECASE)]
         return found_skills
 

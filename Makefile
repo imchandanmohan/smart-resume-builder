@@ -8,8 +8,10 @@ install:
 	conda env update --file environment.yml --name base
 	pip install spacy pytest
 
+PYTHON := $(shell which python)
+
 test:
-	pytest tests/
+	$(PYTHON) -m pytest tests/
 
 setup: install
 	bash setup.sh
