@@ -1,4 +1,32 @@
-/venv/
+
 job_description.txt
 job_description_output.txt
-.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Test cache
+.pytest_cache/
+
+# VSCode or other IDE settings
+.vscode/
+.idea/
+
+# Mac / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Conda environment backup
+*.conda

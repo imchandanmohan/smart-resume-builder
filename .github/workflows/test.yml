@@ -1,0 +1,41 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [main, uat, prod, dev]
+  pull_request:
+    branches: [main, uat, prod, dev]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          environment-file: environment.yml
+          activate-environment: smart-resume-builder-env
+          auto-activate-base: false
+
+      - name: Debug Conda Env
+        shell: bash -l {0}
+        run: |
+          which python
+          python --version
+          pip list
+
+      - name: Install SpaCy model
+        shell: bash -l {0}
+        run: python -m spacy download en_core_web_sm
+
+      - name: Run Linter
+        shell: bash -l {0}
+        run: make lint
+
+      - name: Run Tests
+        shell: bash -l {0}
+        run: make test
