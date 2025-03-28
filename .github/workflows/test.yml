@@ -29,7 +29,9 @@ jobs:
           pip list
 
       - name: Install SpaCy model
-        run: python -m spacy download en_core_web_sm
+        run: |
+          source activate smart-resume-builder-env
+          python -m spacy download en_core_web_sm
 
       - name: Run Linter
         run: make lint
