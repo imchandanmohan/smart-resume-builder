@@ -39,11 +39,22 @@ class JobDescriptionParser:
         return ""
 
     def extract_company_name(self, text: str) -> str:
+        """
+        Extract company name using NER or regex fallback.
+                """
         doc = self.nlp(text)
         for ent in doc.ents:
             if ent.label_ == "ORG":
-                return ent.text
-        return ""
+                return ent.text.strip()
+
+        # Fallback: Look for common phrases
+        match = re.search(r"(?:at|with|by|for|join)\s+([A-Z][A-Za-z0-9\s&.,]+)", text)
+        if match:
+            return match.group(1).strip()
+
+        # Consider "Company:" pattern
+        match = re.search(r"Company[:\s]*([A-Z][A-Za-z0-9\s&.,]+)", text)
+        return match.group(1).strip() if match else ""
 
     def extract_location(self, text: str) -> str:
         doc = self.nlp(text)
