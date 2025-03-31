@@ -33,7 +33,7 @@ class JobDescriptionParser:
             "ats_score": self.ats_optimization_score(job_text)
         }
 
-        def extract_section_items(self, text: str, section_header_regex: str) -> List[str]:
+    def extract_section_items(self, text: str, section_header_regex: str) -> List[str]:
         """
         Generic method to extract bullet point items under a specific section header.
         """
