@@ -100,7 +100,13 @@ class JobDescriptionParser:
         return found
 
     def extract_job_type(self, text: str) -> str:
-        job_types = ["full-time", "part-time", "contract", "temporary", "freelance"]
+        """
+        Dynamically detects job type from description.
+        """
+        job_types = [
+            "full-time", "part-time", "contract", "temporary",
+            "internship", "freelance", "hybrid", "remote"
+        ]
         for jt in job_types:
             if re.search(jt, text, re.IGNORECASE):
                 return jt
