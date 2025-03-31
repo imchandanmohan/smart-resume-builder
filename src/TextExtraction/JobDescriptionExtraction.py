@@ -57,9 +57,18 @@ class JobDescriptionParser:
         return match.group(1).strip() if match else ""
 
     def extract_location(self, text: str) -> str:
+        """
+        Extract geographic location using spaCy's NER with regex fallback.
+                """
         doc = self.nlp(text)
-        locations = [ent.text for ent in doc.ents if ent.label_ in ["GPE"]]
-        return ", ".join(set(locations))
+        locations = [ent.text for ent in doc.ents if ent.label_ == "GPE"]
+
+        if locations:
+            return ", ".join(set(locations))
+
+        # Fallback: Look for common location phrases
+        match = re.search(r"(?:Location|Based in|Work Location|Located at)[:\s]*([A-Za-z0-9,\s]+)", text)
+        return match.group(1).strip() if match else ""
 
     def extract_responsibilities(self, text: str) -> List[str]:
         lines = text.split('\n')
