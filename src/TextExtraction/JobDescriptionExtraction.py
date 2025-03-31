@@ -1,3 +1,4 @@
+# %%
 import re
 import spacy
 from collections import Counter
@@ -12,13 +13,7 @@ class JobDescriptionParser:
         self.qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")  # LLM for QA
         self.embedder = SentenceTransformer('all-MiniLM-L6-v2')  # Contextual embeddings for job title recognition
 
-    def parse(
-        self, 
-        job_text: str
-    ) -> Dict[
-        str, Union[List[str], str, Dict[str, float]]
-    ]:
-
+    def parse(self, job_text: str) -> Dict[str, Union[List[str], str, Dict[str, float]]]:
         return {
             "job_title": self.extract_job_title(job_text),
             "company_name": self.extract_company_name(job_text),
@@ -32,6 +27,12 @@ class JobDescriptionParser:
             "job_type": self.extract_job_type(job_text),
             "ats_score": self.ats_optimization_score(job_text)
         }
+
+    def preprocess_text(self, text: str) -> str:
+        """
+        Clean up and normalize the text to prepare for parsing.
+        """
+        return "\n".join(line.strip() for line in text.splitlines() if line.strip())
 
     def extract_section_items(self, text: str, section_header_regex: str) -> List[str]:
         """
@@ -47,7 +48,7 @@ class JobDescriptionParser:
                 continue
 
             if in_section:
-            # Stop if we hit another section or a blank line
+                # Stop if we hit another section or a blank line
                 if re.match(r"^[A-Z][a-z]+:", line.strip()) or line.strip() == "":
                     break
                 cleaned_line = line.strip("-• \t").strip()
@@ -136,6 +137,7 @@ class JobDescriptionParser:
         ]
         for jt in job_types:
             if re.search(jt, text, re.IGNORECASE):
+                print(jt)
                 return jt
         return ""
 
