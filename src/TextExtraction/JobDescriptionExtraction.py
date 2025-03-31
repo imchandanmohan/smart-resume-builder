@@ -1,12 +1,16 @@
 import re
 import spacy
-from typing import Dict, List, Union
 from collections import Counter
+from typing import Dict, List, Union
+from transformers import pipeline
+from sentence_transformers import SentenceTransformer, util
 
 
 class JobDescriptionParser:
     def __init__(self):
-        self.nlp = spacy.load("en_core_web_sm")
+        self.nlp = spacy.load("en_core_web_trf")  # Transformer-based NER
+        self.qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")  # LLM for QA
+        self.embedder = SentenceTransformer('all-MiniLM-L6-v2')  # Contextual embeddings for job title recognition
 
     def parse(
         self, 
@@ -28,6 +32,29 @@ class JobDescriptionParser:
             "job_type": self.extract_job_type(job_text),
             "ats_score": self.ats_optimization_score(job_text)
         }
+
+        def extract_section_items(self, text: str, section_header_regex: str) -> List[str]:
+        """
+        Generic method to extract bullet point items under a specific section header.
+        """
+        lines = text.split("\n")
+        section_items = []
+        in_section = False
+
+        for line in lines:
+            if re.search(section_header_regex, line, re.IGNORECASE):
+                in_section = True
+                continue
+
+            if in_section:
+            # Stop if we hit another section or a blank line
+                if re.match(r"^[A-Z][a-z]+:", line.strip()) or line.strip() == "":
+                    break
+                cleaned_line = line.strip("-• \t").strip()
+                if cleaned_line:
+                    section_items.append(cleaned_line)
+
+        return section_items
 
     def extract_job_title(self, text: str) -> str:
         match = re.search(
