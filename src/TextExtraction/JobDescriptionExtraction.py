@@ -4,7 +4,7 @@ import spacy
 from collections import Counter
 from typing import Dict, List, Union
 from transformers import pipeline
-from sentence_transformers import SentenceTransformer, util
+from sentence_transformers import SentenceTransformer
 
 
 class JobDescriptionParser:
