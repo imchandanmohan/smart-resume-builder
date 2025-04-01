@@ -1,22 +1,34 @@
 name: smart-resume-builder-env
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - python=3.10
   - pip
   - pip:
-      - spacy==3.8.4
-      - pytest
+      - altair
       - flake8
-      - streamlit==1.44.0
-      - streamlit-chat==0.1.1
+      - IPython
       - numpy
+      - openai
       - pandas
+      - pyttsx3
+      - python-dotenv
+      - pytest
       - requests
-      - pyarrow
-      - pydantic
-      - protobuf
+      - scipy
+      - spacy
+      - speechrecognition
+      - streamlit
+      - streamlit-chat
+      - streamlit-navigation-bar
+      - torch
+      - transformers
       - gitpython
       - jinja2
       - rich
       - tqdm
+      - requests
+      - pyarrow
+      - pydantic
+      - protobuf
