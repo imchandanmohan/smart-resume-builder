@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#9C6B30"              # Elegant gold
+backgroundColor = "#FAFAFA"           # Soft off-white
+secondaryBackgroundColor = "#F2F4F8"  # Clean light gray
+textColor = "#1E2A38"                 # Deep navy-gray for contrast
+font = "serif"                        # Formal and professional
