@@ -34,3 +34,4 @@ dependencies:
       - protobuf
       - streamlit-pdf-viewer
       - PyPDF2
+      - sentence_transformers
