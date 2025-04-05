@@ -32,3 +32,5 @@ dependencies:
       - pyarrow
       - pydantic
       - protobuf
+      - streamlit-pdf-viewer
+      - PyPDF2
