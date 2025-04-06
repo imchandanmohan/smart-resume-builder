@@ -1,14 +1,13 @@
 import sys
 import os
-
-# Add the root directory to the Python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
-
 import re
 import time
 import string
-from typing import Dict, List
+from typing import List
 from src.api.together_client import query_together_ai
+# Add the root directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+
 
 class JobDescriptionParser:
     # =================== Utilities ===================
@@ -20,9 +19,7 @@ class JobDescriptionParser:
         lines = [line.strip() for line in response.split("\n") if line.strip()]
         cleaned = [re.sub(r"^[\-\*\•]+\s*", "", line).strip() for line in lines if len(line) > 3]
         return [re.sub(r"\s+", " ", line) for line in cleaned]
-
-
-
+    
     def deduplicate_text(self, text: str) -> str:
         sentences = re.split(r'(?<=[.!?])\s+', text)
         seen = []
@@ -40,12 +37,12 @@ class JobDescriptionParser:
         return seen
     
     def normalize_keywords(self, keywords: List[str]) -> List[str]:
-        return list({
-        kw.strip().strip(string.punctuation).capitalize()
-        for kw in keywords if kw.strip()
+        return list
+        ({
+            kw.strip().strip(string.punctuation).capitalize()
+            for kw in keywords if kw.strip()
         })
-
-
+    
     # =================== Extraction Functions ===================
     def extract_job_title(self, text: str) -> str:
         time.sleep(6)
@@ -75,11 +72,10 @@ class JobDescriptionParser:
                 seen.add(low)
                 deduped.append(it)
         return deduped
-
     
     def extract_soft_skills(self, text: str) -> List[str]:
         time.sleep(6)
-        response = query_together_ai( "Extract only soft skills or interpersonal skills mentioned in the job description (e.g., communication, leadership, problem-solving). ""Exclude technical skills and tools. Return as a comma-separated list:\n\n" + text )
+        response = query_together_ai("Extract only soft skills or interpersonal skills mentioned in the job description (e.g., communication, leadership, problem-solving). ""Exclude technical skills and tools. Return as a comma-separated list:\n\n" + text)
         items = [s.strip() for s in response.split(",") if s.strip()]
         seen, deduped = set(), []
         for it in items:
@@ -101,13 +97,11 @@ class JobDescriptionParser:
         filtered = [line for line in cleaned if not line.lower().startswith("experience requirements:")]
         return self.deduplicate_list(filtered)
 
-
     def extract_keywords(self, text: str) -> List[str]:
         time.sleep(6)
         raw = query_together_ai("Extract the top 10 keywords or skills relevant to the role as a comma-separated list:\n\n" + text)
         items = [k.strip() for k in raw.split(",") if k.strip()]
         return self.normalize_keywords(items)
-
 
     def extract_benefits(self, text: str) -> List[str]:
         time.sleep(6)
@@ -133,4 +127,3 @@ class JobDescriptionParser:
             "benefits": self.extract_benefits(text),
             "job_type": self.extract_job_type(text),
         }
-

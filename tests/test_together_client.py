@@ -1,4 +1,3 @@
-import pytest
 from src.api.together_client import query_together_ai
 
 def test_query_together_ai_job_title():
