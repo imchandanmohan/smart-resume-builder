@@ -33,4 +33,3 @@ def test_parser_runs_on_sample(mock_parse):
     assert result.get("location"), "location should not be empty"
     assert "technical_skills" in result and isinstance(result["technical_skills"], list), "technical_skills should be a list"
     assert "soft_skills" in result and isinstance(result["soft_skills"], list), "soft_skills should be a list"
-
