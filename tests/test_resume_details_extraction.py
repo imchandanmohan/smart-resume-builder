@@ -1,13 +1,16 @@
 import sys
 import os
-import json
-from glob import glob
-from unittest.mock import patch, MagicMock
-
-# Add project root to path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from TextExtraction.ResumeDetailsExtraction import extract_text_from_pdf, extract_resume_with_llm, build_structured_resume
+import json
+from glob import glob
+from unittest.mock import patch
+
+from TextExtraction.ResumeDetailsExtraction import (
+    extract_text_from_pdf,
+    extract_resume_with_llm,
+    build_structured_resume
+)
 
 # ✅ Mock LLM JSON-like response (mimics Together API output)
 mock_llm_api_output = {
@@ -64,6 +67,7 @@ def test_llm_resume_parser(mock_extract_resume_data):
 
     print("✅ Parsed Structured Resume (Mocked LLM):")
     print(json.dumps(structured, indent=2))
+
 
 # Allow running standalone
 if __name__ == "__main__":

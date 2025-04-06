@@ -3,12 +3,10 @@ import re
 import sys
 import os
 import pdfplumber
-
+from src.api.together_client_resume import TogetherResumeParser
 
 # Add the root directory to the Python path (one level up from src)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-
-from src.api.together_client_resume import TogetherResumeParser
 
 # 🧱 Extract raw text from a PDF file
 def extract_text_from_pdf(filename):
@@ -79,6 +77,3 @@ def build_structured_resume(parsed):
 def print_structured_resume(resume_json):
     print("\n🧾 COMPLETE STRUCTURED RESUME JSON\n")
     print(json.dumps(resume_json, indent=2))
-
-
-
