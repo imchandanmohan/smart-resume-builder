@@ -1,12 +1,10 @@
 import sys
 import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-
 import json
 from glob import glob
 from unittest.mock import patch
-
-from TextExtraction.ResumeDetailsExtraction import (
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+from src.TextExtraction.ResumeDetailsExtraction import (
     extract_text_from_pdf,
     extract_resume_with_llm,
     build_structured_resume
