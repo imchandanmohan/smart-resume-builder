@@ -11,7 +11,7 @@ def test_parser_runs_on_sample():
     - Build predictive models
     Qualifications:
     - Bachelor's degree in Computer Science
-    Experience: 2+ years of experience in maßchine learning
+    Experience: 2+ years of experience in machine learning
     Benefits: Health insurance, stock options
     Job Type: Full-time
     '''

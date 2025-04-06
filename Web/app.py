@@ -1,75 +1,122 @@
 import streamlit as st
-from pathlib import Path
+import random
 import base64
 
-# Add src to path for importing custom modules
-import sys
-sys.path.append(str(Path(__file__).resolve().parent.parent))
-
-from src.utils.pdf_utils import extract_text_from_pdf
-from src.api.grok_client import call_grok_api
-from streamlit_pdf_viewer import pdf_viewer
-
+# Configure page
 st.set_page_config(page_title="Resume Builder", layout="wide")
 
-# --- Style fix for full-width
+# Custom CSS for styling
 st.markdown("""
-    <style>
-        .block-container {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-    </style>
+<style>
+    .header {
+        background-color: White;
+        color: Black;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        border: 1px solid Red;
+    }
+    .resume-container {
+        border: 1px solid Red;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .profile-tile {
+        border: 1px solid #444;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 0.5rem;
+        background-color: #222;
+        color: white;
+        text-align: center;
+    }
+    .next-btn {
+        float: right;
+        margin-top: 1rem;
+    }
+    .stTextArea textarea {
+        border: 1px solid Red !important;
+    }
+</style>
 """, unsafe_allow_html=True)
 
-# --- Background audio autoplay (once)
-audio_path = Path(__file__).resolve().parent.parent / "src" / "assets" / "voice.mp3"
-if audio_path.exists():
-    with open(audio_path, "rb") as audio_file:
-        audio_base64 = base64.b64encode(audio_file.read()).decode()
-    st.components.v1.html(f"""
-        <audio autoplay hidden>
-            <source src="data:audio/mp3;base64,{audio_base64}" type="audio/mp3">
-        </audio>
-    """, height=0)
-else:
-    st.warning(f"Voice file not found at: {audio_path}")
+# Header Section
+st.markdown("""
+<div class="header">
+    <h1 style="margin:0;">Smart Resume Builder</h1>
+    <p style="margin:0;">Upload your resume and job description for analysis</p>
+</div>
+""", unsafe_allow_html=True)
 
-# --- Upload Section ---
-st.title("Welcome to Resume Builder")
-uploaded_file = st.file_uploader("Upload your resume (PDF only)", type=["pdf"])
+# Main Content - Two Columns
+col1, col2 = st.columns(2, gap="large")
 
-if uploaded_file:
-    st.markdown("### Uploaded Resume:")
-    st.markdown("<div style='width: 100%; display: flex; justify-content: center;'>", unsafe_allow_html=True)
-    pdf_viewer(uploaded_file.getvalue(), width="100%", height=900)
-    st.markdown("</div>", unsafe_allow_html=True)
+# Left Column - Resume Upload & Preview
+with col1:
+    st.subheader("📄 Your Resume")
+    uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])
 
-    # "Next" button
-    col1, col2, col3 = st.columns([1, 6, 1])
-    with col3:
-        if st.button("Next ➡️"):
-            with st.spinner("Analyzing your resume..."):
+    if uploaded_file:
+        with st.expander("View Resume", expanded=True):
+            # Save the PDF bytes
+            pdf_bytes = uploaded_file.read()
 
-                # Loading GIF
-                gif_path = Path(__file__).resolve().parent.parent/ "src"  / "assets" / "loading.gif"
-                if gif_path.exists():
-                    st.image(str(gif_path), use_column_width=True)
-                else:
-                    st.warning("Loading GIF not found.")
+            # Encode to base64
+            pdf_base64 = base64.b64encode(pdf_bytes).decode('utf-8')
+            pdf_display = f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="700" height="800" type="application/pdf"></iframe>'
+            st.markdown(pdf_display, unsafe_allow_html=True)
 
-                # Extract text and send to API
-                pdf_text = extract_text_from_pdf(uploaded_file)
-                prompt = "Extract structured details like name, email, skills, etc."
-                result = call_grok_api(prompt, pdf_text)
+# Right Column - Job Description
+with col2:
+    st.subheader("📝 Job Description")
+    job_description = st.text_area(
+        "Paste the job description here:",
+        height=1000,
+        placeholder="Paste the full job description you're applying for..."
+    )
 
-                st.success("Resume parsed successfully!")
-                st.subheader("Result:")
-                st.json(result)
+# Profile Tiles Section
+st.markdown("### Candidate Profiles")
+profile_col1, profile_col2, profile_col3 = st.columns(3)
 
-                # Optional: download result
-                st.download_button(
-                    label="Download Result",
-                    data=str(result).encode(),
-                    file_name="parsed_resume.json"
-                )
+with profile_col1:
+    st.markdown("""
+    <div class="profile-tile">
+        <h3>John Smith</h3>
+        <p>Age: 28</p>
+        <p>Experience: 5 years</p>
+        <p>Skills: Python, Data Analysis</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+with profile_col2:
+    st.markdown("""
+    <div class="profile-tile">
+        <h3>Sarah Johnson</h3>
+        <p>Age: 35</p>
+        <p>Experience: 10 years</p>
+        <p>Skills: Machine Learning, SQL</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+with profile_col3:
+    st.markdown("""
+    <div class="profile-tile">
+        <h3>Michael Chen</h3>
+        <p>Age: 24</p>
+        <p>Experience: 2 years</p>
+        <p>Skills: Web Development, JavaScript</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Bottom Section - Status and Actions
+st.markdown("---")
+status_col, btn_col = st.columns([3, 1])
+
+with status_col:
+    if uploaded_file:
+        st.info("✅ Resume uploaded successfully")
+    if job_description:
+        st.info("✅ Job description ready for analysis")
+
