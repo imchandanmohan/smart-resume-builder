@@ -67,8 +67,3 @@ def test_llm_resume_parser(mock_extract_resume_data):
 
     print("✅ Parsed Structured Resume (Mocked LLM):")
     print(json.dumps(structured, indent=2))
-
-
-# Allow running standalone
-if __name__ == "__main__":
-    test_llm_resume_parser()
