@@ -35,3 +35,4 @@ dependencies:
       - streamlit-pdf-viewer
       - PyPDF2
       - sentence_transformers
+      - pdfplumber
