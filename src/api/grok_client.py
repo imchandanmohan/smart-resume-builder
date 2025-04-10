@@ -2,13 +2,12 @@ import os
 import requests
 from dotenv import load_dotenv
 
-def call_groq_api(user_prompt, input_message, temperature=0.7, max_tokens=100):
+def call_groq_api(messages, temperature=0.7, max_tokens=100):
     """
-    Sends a persona prompt and user input to the Groq API and returns the JSON response.
+    Sends a list of messages to the Groq API and returns the JSON response.
 
     Parameters:
-    - user_prompt (str): Instruction to set the behavior of the assistant.
-    - input_message (str): Actual message or query from the user.
+    - messages (list): List of messages in OpenAI format [{'role': 'system'/'user'/'assistant', 'content': '...'}]
     - temperature (float): Controls the randomness of the response.
     - max_tokens (int): Max tokens to generate in the response.
 
@@ -29,10 +28,7 @@ def call_groq_api(user_prompt, input_message, temperature=0.7, max_tokens=100):
 
     payload = {
         "model": "llama-3.3-70b-versatile",
-        "messages": [
-            {"role": "system", "content": user_prompt},   # Set the behavior
-            {"role": "user", "content": input_message}    # Actual input/query
-        ],
+        "messages": messages,
         "temperature": temperature,
         "max_tokens": max_tokens
     }
@@ -45,8 +41,15 @@ def call_groq_api(user_prompt, input_message, temperature=0.7, max_tokens=100):
         print(f"An error occurred: {e}")
         return None
 
+# Test it
 def main():
-    response_data = call_groq_api("Act like a friendly customer service agent.", "Say welcome!", temperature=0.5, max_tokens=100)
+    messages = [
+        {"role": "system", "content": "Act like a friendly customer service agent."},
+        {"role": "user", "content": "Say welcome!"}
+    ]
+
+    response_data = call_groq_api(messages, temperature=0.5, max_tokens=100)
+    
     if response_data:
         assistant_reply = response_data.get("choices", [])[0].get("message", {}).get("content", "")
         print("Assistant's Reply:", assistant_reply)

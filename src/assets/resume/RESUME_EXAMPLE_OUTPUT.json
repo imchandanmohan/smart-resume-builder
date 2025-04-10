@@ -1,0 +1,94 @@
+{
+    "name": "Jonathan Javier",
+    "contact": "Scranton, PA | https://www.linkedin.com/in/jonathanjavier | +1-866-663-2783 | StopRejectingMe@Companies | Wonsulting.com",
+    "education": {
+      "university": "University of California, Riverside",
+      "degree": "BS in Business Administration - Finance",
+      "gpa": "3.5",
+      "graduation_date": "June 2017",
+      "awards": [
+        "Honors Program",
+        "ALPFA",
+        "ASUCR",
+        "Dean’s Honors List",
+        "Chancellor’s Honors List",
+        "Cum Laude"
+      ]
+    },
+    "work_experience": [
+      {
+        "company": "Snap, Inc. (Snapchat)",
+        "title": "Operations Specialist - Product Ops",
+        "location": "Santa Monica, CA",
+        "dates": "August 2017 – Present",
+        "responsibilities": [
+          "Researched user trends to implement Go-To-Market strategies for new updates, improving operations satisfaction by 17%",
+          "Developed training materials and workflows using Cheetah, Zendesk, Confluence, and Jira for macro language processes and infographics",
+          "Created Snapinars for issue resolutions including password resets, increasing platform efficiency",
+          "Solved 300+ customer inquiries weekly through CRM platforms, enhancing customer service operations"
+        ]
+      },
+      {
+        "company": "Goodwin’s Organics",
+        "title": "Marketing & Strategy Intern",
+        "location": "Riverside, CA",
+        "dates": "January 2017 – June 2017",
+        "responsibilities": [
+          "Generated reports using Excel and PowerPoint to analyze trends and target markets, increasing customer retention by 15% YTD",
+          "Collaborated with senior leadership and used social media strategies to gain 350+ weekly followers",
+          "Strategized a niche market approach, increasing class attendance by 25% weekly"
+        ]
+      },
+      {
+        "company": "Kohl’s",
+        "title": "Operations Management Intern",
+        "location": "Los Angeles, CA",
+        "dates": "June 2016 – August 2016",
+        "responsibilities": [
+          "Analyzed financial statements and dashboards to identify areas for product efficiency and labor optimization",
+          "Collaborated with finance and customer success teams to increase survey submissions by 10%",
+          "Evaluated 100+ employees to enhance productivity by 23% daily"
+        ]
+      },
+      {
+        "company": "Sherwin-Williams",
+        "title": "Operations/Finance Intern",
+        "location": "Huntington Beach, CA",
+        "dates": "May 2015 – August 2015",
+        "responsibilities": [
+          "Presented strategic recommendations and collaborated with 3+ interns, ranking #1 in the Western Region",
+          "Reviewed P&L monthly to identify high/low penetration paints, increasing delivery efficiency by 17%",
+          "Maintained customer relationships with 100+ DIY customers, helping to exceed sales goals by 11% MTD"
+        ]
+      }
+    ],
+    "leadership_experience": [
+      {
+        "organization": "Association of Latino Professionals For America (ALPFA)",
+        "title": "Director of Professional Development (OC)",
+        "location": "Riverside, CA",
+        "dates": "April 2017 – Present",
+        "responsibilities": [
+          "Partnered with 100+ professionals from companies like Deloitte, KPMG, and Vanguard to host events with 50+ attendees",
+          "Brought 10+ accounting firms to UC Riverside to recruit 250+ students"
+        ]
+      },
+      {
+        "organization": "Associated Students of UC Riverside (Student Government)",
+        "title": "Elected CHASS Senator",
+        "location": "Riverside, CA",
+        "dates": "May 2016 – June 2017",
+        "responsibilities": [
+          "Managed a $1.6M budget and allocated $10,000+ weekly to student organizations and initiatives",
+          "Organized impactful projects like the Academic TestBank System and ASUCR Career Fair, reaching 22,000+ students"
+        ]
+      }
+    ],
+    "skills_and_interests": {
+      "skills": {
+        "Tools": ["Excel", "PowerPoint", "CRM (Zendesk, Confluence, JIRA)", "G-Suite"],
+        "Technical": ["SQL (Class)"]
+      }
+    }
+  }
+  

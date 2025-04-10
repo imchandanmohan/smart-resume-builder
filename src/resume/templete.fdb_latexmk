@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1743833704.93145 "/Users/chandanmohan/Desktop/smart-resume-builder/src/resume/templete.tex" "templete.pdf" "templete" 1743833705.46213 0
-  "/Users/chandanmohan/Desktop/smart-resume-builder/src/resume/templete.tex" 1743833704.70479 3638 1614483851f3a4d4a233195d92382085 ""
+["pdflatex"] 1744254638.75685 "/Users/chandanmohan/Desktop/smart-resume-builder/src/resume/templete.tex" "templete.pdf" "templete" 1744254640.21409 0
+  "/Users/chandanmohan/Desktop/smart-resume-builder/src/resume/templete.tex" 1744254636.7419 3640 2cb90af8b9254bf3c29e1aef1f57b590 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm" 1136768653 2240 eb56c13537f4d8a0bd3fafc25572b1bd ""
@@ -64,9 +64,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1743717842 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "templete.aux" 1743833705.42162 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
-  "templete.out" 1743833705.25928 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "templete.tex" 1743833704.70479 3638 1614483851f3a4d4a233195d92382085 ""
+  "templete.aux" 1744254640.15837 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
+  "templete.out" 1744254639.76626 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "templete.tex" 1744254636.7419 3640 2cb90af8b9254bf3c29e1aef1f57b590 ""
   (generated)
   "templete.aux"
   "templete.log"

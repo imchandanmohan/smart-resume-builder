@@ -1,0 +1,83 @@
+{
+    "general": {
+      "max_total_resume_length": 4000,
+      "tone": "Professional, concise, result-driven",
+      "bullet_point_style": "Start with a strong action verb, include metrics and outcomes",
+      "tense": {
+        "current_role": "present",
+        "past_roles": "past"
+      },
+      "formatting_colors_meaning": {
+        "pink": "action verbs",
+        "yellow": "tools/technologies",
+        "blue": "metrics/outcomes",
+        "green": "team/collaboration"
+      }
+    },
+    "name": {
+      "max_length": 50,
+      "rules": ["Use full name, properly capitalized"]
+    },
+    "contact": {
+      "location": { "type": "string", "max_length": 30 },
+      "linkedin": { "type": "url", "max_length": 100 },
+      "phone": { "type": "string", "max_length": 20 },
+      "email": { "type": "string", "max_length": 50 },
+      "website": { "type": "url", "max_length": 100 }
+    },
+    "education": {
+      "university": { "type": "string", "max_length": 80 },
+      "degree": { "type": "string", "max_length": 80 },
+      "gpa": { "type": "string", "max_length": 10 },
+      "graduation_date": { "type": "string", "max_length": 20 },
+      "awards": {
+        "type": "array",
+        "max_items": 3,
+        "max_item_length": 80
+      }
+    },
+    "work_experience": {
+      "max_entries": 3,
+      "company": { "type": "string", "max_length": 50 },
+      "title": { "type": "string", "max_length": 60 },
+      "location": { "type": "string", "max_length": 30 },
+      "dates": { "type": "string", "max_length": 25 },
+      "responsibilities": {
+        "type": "array",
+        "max_items": 4,
+        "max_item_length": 160,
+        "min_item_length": 80
+      }
+    },
+    "leadership_experience": {
+      "max_entries": 2,
+      "organization": { "type": "string", "max_length": 60 },
+      "title": { "type": "string", "max_length": 60 },
+      "location": { "type": "string", "max_length": 30 },
+      "dates": { "type": "string", "max_length": 25 },
+      "responsibilities": {
+        "type": "array",
+        "max_items": 3,
+        "max_item_length": 140
+      }
+    },
+    "technical_projects": {
+      "max_entries": 2,
+      "project_name": { "type": "string", "max_length": 50 },
+      "description": { "type": "string", "max_length": 150 },
+      "technologies_used": {
+        "type": "array",
+        "max_items": 6,
+        "max_item_length": 20
+      },
+      "outcomes": { "type": "string", "max_length": 150 }
+    },
+    "skills_and_interests": {
+      "skills": {
+        "type": "array",
+        "max_items": 10,
+        "max_item_length": 30
+      }
+    }
+  }
+  
