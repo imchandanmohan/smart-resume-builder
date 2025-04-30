@@ -31,3 +31,5 @@ Thumbs.db
 # Conda environment backup
 *.conda
 .env
+
+junk_files/

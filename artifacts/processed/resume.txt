@@ -1,0 +1,62 @@
+Chandan Mohan
+Email : chandan.mohan@gwu.edu
+linkedin.com/in/imchandanmohan
+Mobile : +1-240-990-9298
+Education
+• George Washington University
+Washington, D.C.
+Master of Science in Computer Science; GPA: 3.80
+Dec. 2023 – May 2024
+Graduate Teaching Assistant (CSCI 6442 - Advanced DBMS II): Worked on Terraform scripts in AWS to automate
+infrastructure deployment for distributed systems and data pipelines, enhancing expertise in data warehouse design.
+Experience
+• Advaiya Solutions
+Udaipur, IN
+Consultant
+Jan 2023 – Oct 2023
+◦TensorFlow: Worked on implementing deep learning models using TensorFlow for structured and unstructured
+data. Focused on model optimization and deployment.
+◦Apache Beam: Built scalable data pipelines using Apache Beam for real-time and batch processing across Google
+Cloud Platform.
+• VNB Consulting Services
+Bangalore, IN
+Senior Software Engineer
+Jun 2020 – Dec 2022
+◦Notifications: Built services for email, push, and in-app notifications with features like delivery time optimization,
+tracking, queuing, and A/B testing.
+◦Nostos: Developed a bulk data processing and injection system from Hadoop to Cassandra with a REST API layer
+for serving offline data.
+◦Workflows: Used Dataduct (open-source) for building reusable and automated data pipelines, improving
+engineering efficiency.
+◦Data Collection: Designed an internal crowdsourcing platform to embed and manage surveys across the Coursera
+ecosystem.
+◦Dev Environment: Set up Docker-based analytics environments on AWS, standardizing Python and R libraries
+used by data science teams.
+◦Recommendations: Contributed to core recommendation systems for Coursera’s homepage and discovery.
+Supported both training and real-time inference.
+◦Content Discovery: Improved search and browsing experience with onboarding personalization, ranking
+improvements, and indexing optimization.
+Projects
+• Credit Risk Prediction System:
+◦Developed an ML pipeline using Logistic Regression and XGBoost to predict credit risk with 87% accuracy.
+Performed feature engineering and hyperparameter tuning, improving AUC-ROC by 12%. Contributed to core
+recommendation systems for Coursera’s homepage and discovery. Supported both training and real-time inference.
+◦Deployed model via Flask API and integrated into a dashboard for real-time decision-making. Applied augmentation
+techniques to reduce overfitting and cut training time by 86%. Built services for email, push, and in-app notifications.
+Designed an internal crowdsourcing platform to embed and manage surveys across the Coursera ecosystem.
+• Image Classification using Transfer Learning:
+◦Fine-tuned ResNet50 and EfficientNet models to classify medical images with 92% validation accuracy.Set up
+Docker-based analytics environments on AWS, standardizing Python and R libraries used by data science teams.Built
+services for email, push, and in-app notifications with features like delivery time optimization, tracking, queuing, and
+A/B testing.
+◦Used MLflow for experiment tracking and versioning to ensure reproducibility. Applied augmentation techniques to
+reduce overfitting and cut training time by 50%.
+Skills
+• Machine Learning:
+TensorFlow, PyTorch, scikit-learn, XGBoost, LightGBM
+• Data Engineering:
+SQL, Apache Spark, Pandas, Airflow
+• Cloud & Deployment:
+AWS, Docker, Kubernetes, Flask
+• Languages:
+Python, Java, C++

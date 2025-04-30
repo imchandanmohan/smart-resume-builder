@@ -1,186 +1,270 @@
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
 import base64
 import time
 from pathlib import Path
+from src.extractors.resume_llm_extractor import ResumeLLMExtractor
+from src.extractors.jd_llm_extractor import JDLLMExtractor
+from config.paths_config import *
+from utils.common_functions import convert_pdf_to_text
+from utils.text_cleaner import smart_post_process_regex, merge_broken_tokens_and_clean
+from src.ner.ner_service import NERService
+from src.analyse_pipeline import process_resume_and_jd
+from src.ats_score import ATSResumeAnalyzer
+from src.analyze_jd_focus import analyze_job_description_focus
+from src.ner.extract_resume_ner import extract_resume_ner
+from utils.common_functions import send_job_summary_email
+# Set correct absolute path from project root
+ABS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'artifacts', 'processed', 'jb_ner.jsonl'))
 
-# Page config
+# --------------------------------------------------
+# PAGE‑LEVEL CONFIG & SESSION STATE
+# --------------------------------------------------
 st.set_page_config(page_title="Smart Resume Builder", layout="wide")
 
-# Custom CSS
-st.markdown("""
-<style>
-    .header {
-        background-color: White;
-        color: Black;
-        padding: 1rem;
-        border-radius: 10px;
-        margin-bottom: 1.5rem;
-        border: 1px solid Red;
-    }
-    .profile-tile {
-        border: 1px solid #444;
-        border-radius: 10px;
-        padding: 1rem;
-        margin: 0.5rem;
-        background-color: #222;
-        color: white;
-        text-align: center;
-    }
-    .stTextArea textarea {
-        border: 1px solid Red !important;
-    }
-</style>
-""", unsafe_allow_html=True)
+if "page" not in st.session_state:           # <upload | analysis | final>
+    st.session_state.page = "upload"
 
-# Paths
-base_audio_path = Path(__file__).resolve().parent.parent / "src/assets/agentvoice/prerecorded/v2_en/en_speaker_6"
-general_audio_path = Path(__file__).resolve().parent.parent / "src/assets/agentvoice/prerecorded/generalsounds"
+a_keys = ("resume_bytes", "resume_name", "job_description")
+for k in a_keys:
+    st.session_state.setdefault(k, None)
 
-welcome_path = base_audio_path / "Welcome.mp3"
-confres_path = base_audio_path / "ConfRes.mp3"
-confdes_path = base_audio_path / "ConfDes.mp3"
-ringtone_path = general_audio_path / "cellphone-ringing.mp3"
+# --------------------------------------------------
+# SHARED  STYLES / HEADER
+# --------------------------------------------------
+st.markdown(
+    """
+    <style>
+        .header {background:#eee; color:#000; padding:1rem; border-radius:8px; margin-bottom:1.2rem; border:1px solid #d3d3d3;}
+        .stTextArea textarea {border:1px solid #aaa !important;}
+        .issue-label {font-weight:600; font-size:0.9rem; margin-top:0.3rem;}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
-# === JS Audio Playback for Welcome → Resume Upload Chain === #
-if welcome_path.exists() and confres_path.exists():
-    with open(welcome_path, "rb") as f:
-        welcome_b64 = base64.b64encode(f.read()).decode()
-    with open(confres_path, "rb") as f:
-        confres_b64 = base64.b64encode(f.read()).decode()
-
-    st.components.v1.html(f"""
-    <audio id="welcome" autoplay hidden>
-        <source src="data:audio/mp3;base64,{welcome_b64}" type="audio/mp3">
-    </audio>
-    <audio id="confres" hidden>
-        <source src="data:audio/mp3;base64,{confres_b64}" type="audio/mp3">
-    </audio>
-    <script>
-        const welcome = document.getElementById("welcome");
-        const confres = document.getElementById("confres");
-        welcome.onended = function() {{
-            if (sessionStorage.getItem("resumeUploaded") === "true") {{
-                confres.play();
-            }}
-        }};
-    </script>
-    """, height=0)
-
-# Header
-st.markdown("""
-<div class="header">
-    <h1 style="margin:0;">Smart Resume Builder</h1>
-    <p style="margin:0;">Upload your resume and job description for analysis</p>
-</div>
-""", unsafe_allow_html=True)
-
-# Layout
-col1, col2 = st.columns(2, gap="large")
-
-# Resume Upload
-with col1:
-    st.subheader("📄 Your Resume")
-    uploaded_file = st.file_uploader("Upload PDF", type=["pdf"], label_visibility="collapsed")
-
-    if uploaded_file and "resume_uploaded" not in st.session_state:
-        st.session_state.resume_uploaded = True
-        st.components.v1.html("""
-            <script> sessionStorage.setItem("resumeUploaded", "true"); </script>
-        """, height=0)
-
-    if uploaded_file:
-        with st.expander("View Resume", expanded=True):
-            pdf_bytes = uploaded_file.read()
-            pdf_b64 = base64.b64encode(pdf_bytes).decode('utf-8')
-            pdf_display = f'<iframe src="data:application/pdf;base64,{pdf_b64}" width="700" height="800" type="application/pdf"></iframe>'
-            st.markdown(pdf_display, unsafe_allow_html=True)
-
-# Job Description Input
-with col2:
-    st.subheader("📝 Job Description")
-    job_description = st.text_area(
-        "Paste the job description here:",
-        height=1000,
-        placeholder="Paste the full job description you're applying for...",
-        label_visibility="collapsed"
+def header():
+    st.markdown(
+        """
+        <div class="header">
+            <h2 style="margin:0;">Smart Resume Builder</h2>
+            <p style="margin:0;">Single location for resume creation and job description analysis</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
 
-    if job_description and "description_confirmed" not in st.session_state:
-        st.session_state.description_confirmed = True
-        with st.spinner("Processing job description..."):
-            time.sleep(6)
+# --------------------------------------------------
+# PAGE 1 – UPLOAD  (LEFT resume | RIGHT JD)
+# --------------------------------------------------
 
-        if confdes_path.exists():
-            with open(confdes_path, "rb") as f:
-                confdes_b64 = base64.b64encode(f.read()).decode()
+def page_upload():
+    header()
 
-            st.components.v1.html(f"""
-                <audio autoplay hidden>
-                    <source src="data:audio/mp3;base64,{confdes_b64}" type="audio/mp3">
-                </audio>
-            """, height=0)
+    col1, col2 = st.columns(2, gap="large")
 
-        st.session_state.show_profiles = True
+    # ---- Resume Upload --------------------------------------------------
+    with col1:
+        st.subheader("📄 Your Resume")
+        uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])
+        if uploaded_file:
+            st.session_state.resume_bytes = uploaded_file.read()
+            st.session_state.resume_name = "resume.pdf"
 
-# Show Profiles
-if st.session_state.get("show_profiles"):
-    st.markdown("### Candidate Profiles")
-    profile_col1, profile_col2, profile_col3 = st.columns(3)
+            with st.expander("Preview Resume", expanded=False):
+                b64 = base64.b64encode(st.session_state.resume_bytes).decode()
+                st.markdown(
+                    f"<iframe src='data:application/pdf;base64,{b64}' width='100%' height='600'></iframe>",
+                    unsafe_allow_html=True,
+                )
 
-    def play_ringtone_and_redirect():
-        if not ringtone_path.exists():
-            st.error("Ringtone file not found")
-            return
+    # ---- Job Description ------------------------------------------------
+    with col2:
+        st.subheader("📝 Job Description")
+        jd_text = st.text_area(
+            "Paste the job description here:",
+            height=500,
+            placeholder="Paste the full JD …",
+        )
+        if jd_text:
+            st.session_state.job_description = jd_text
 
-        with open(ringtone_path, "rb") as f:
-            ringtone_b64 = base64.b64encode(f.read()).decode()
+    # ---- Footer / NEXT --------------------------------------------------
+    st.markdown("---")
+    left, right = st.columns([3, 1])
+    with left:
+        if st.session_state.resume_bytes:
+            st.info("✅ Resume uploaded")
+        if st.session_state.job_description:
+            st.info("✅ Job description added")
 
-        st.components.v1.html(f"""
-            <audio id="ringtone" autoplay hidden>
-                <source src="data:audio/mp3;base64,{ringtone_b64}" type="audio/mp3">
-            </audio>
-            <script>
-                const audio = document.getElementById("ringtone");
-                audio.play();
-                setTimeout(function() {{
-                    window.location.href = "/Resume_Builder";
-                }}, 10000);
-            </script>
-        """, height=0)
+    with right:
+        can_go_next = st.session_state.resume_bytes and st.session_state.job_description
+        if st.button("Analyze ➡️", disabled=not can_go_next):
+            st.session_state.page = "analysis"
+
+            # Run the whole pipeline
+            process_resume_and_jd(st.session_state.resume_bytes, st.session_state.job_description)
+
+            # ✅ Only AFTER processing success, move to analysis page
+            st.session_state.page = "analysis"
+
+            st.rerun()
+
+# --------------------------------------------------
+# PAGE 2 – ANALYSIS  (SIDEBAR gauge  + 3‑TAB main)
+# --------------------------------------------------
+
+def sidebar_ats(ats_data):
+    with st.sidebar:
+        st.header("Match Rate")
+        match_rate = ats_data.get("ATS_score", 0)
+        st.markdown(
+            f"""
+            <div style='position:relative;width:140px;height:140px;margin:auto;'>
+                <svg width='140' height='140'>
+                    <circle cx='70' cy='70' r='60' stroke='#eee' stroke-width='14' fill='none'/>
+                    <circle cx='70' cy='70' r='60' stroke='#4caf50' stroke-width='14' fill='none' 
+                            stroke-dasharray='{match_rate*3.77} 999' stroke-dashoffset='75' stroke-linecap='round'/>
+                </svg>
+                <div style='position:absolute;top:45px;left:0;width:140px;text-align:center;font-size:28px;font-weight:700;'>{match_rate}%</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.button("Upload & rescan")
+        st.button("⚡ Power Edit")
+
+        issues = ats_data.get("issues", {})
+        for k, v in issues.items():
+            st.markdown(f"<div class='issue-label'>{k} – {v} issue{'s' if v != 1 else ''} to fix</div>", unsafe_allow_html=True)
+            st.progress(min(v / 12, 1.0))
 
 
-    if profile_col1.button("🔎 John Smith"):
-        play_ringtone_and_redirect()
 
-    if profile_col2.button("🔎 Sarah Johnson"):
-        play_ringtone_and_redirect()
+def analytics_tab(ats_data):
+    def row(msg, icon="ℹ️", color="info"):
+        if color == "success":
+            st.success(msg, icon=icon)
+        elif color == "error":
+            st.error(msg, icon=icon)
+        elif color == "warning":
+            st.warning(msg, icon=icon)
+        else:
+            st.info(msg, icon=icon)
 
-    if profile_col3.button("🔎 Michael Chen"):
-        play_ringtone_and_redirect()
+    suggestions = ats_data.get("suggestions", [])
 
-# Status + Analyze Button
-st.markdown("---")
-status_col, btn_col = st.columns([3, 1])
+    if not suggestions:
+        row("No suggestions found — your resume looks great!", "✅", "success")
+    else:
+        for item in suggestions:
+            text = item.get("text", "")
+            cat = item.get("category", "info")
+            icon = {
+                "error": "❌",
+                "warning": "⚠️",
+                "suggestion": "💡",
+                "information": "ℹ️"
+            }.get(cat, "ℹ️")
+            row(text, icon=icon, color=cat)
 
-with status_col:
-    if uploaded_file:
-        st.info("✅ Resume uploaded successfully")
-    if job_description:
-        st.info("✅ Job description ready for analysis")
 
-with btn_col:
-    if st.button("Analyze ➡️", type="primary", use_container_width=True):
-        with st.spinner("Analyzing your resume..."):
-            time.sleep(1)
-            st.toast("Starting analysis...", icon="🔍")
-            time.sleep(2)
-            st.toast("Matching your skills to the job...", icon="🎙️")
-            time.sleep(1)
-            st.success("Analysis complete!")
 
-            st.subheader("Results")
-            st.json({
-                "match_score": "85%",
-                "key_skills": ["Python", "Streamlit", "Data Analysis"],
-                "suggestions": ["Highlight more project experience", "Add certification section"]
-            })
+def page_analysis():
+    header()
+
+    analyzer = ATSResumeAnalyzer()
+    ats_data = analyzer.analyze()
+    sidebar_ats(ats_data)
+
+    tab1, tab2, tab3 = st.tabs(["ATS Analytics", "Job Description", "Resume"])
+
+    with tab1:
+        analytics_tab(ats_data)
+        st.write("Page is commented")
+    with tab2:
+        st.header("📌 Job Description Focus Analysis")
+        try:
+            label_counts, summary = analyze_job_description_focus()
+
+            st.subheader("Label Frequency")
+            for label, count in label_counts:
+                st.markdown(f"- **{label}**: {count} mentions")
+                st.progress(min(count / 20, 1.0))  # bar length scaling
+
+            st.markdown("---")
+            st.subheader("💡 Insight")
+            st.info(summary)
+
+            st.markdown("---")
+            st.subheader("📄 Original Job Description")
+            st.write(st.session_state.job_description)
+
+        except FileNotFoundError as e:
+            st.error(str(e))
+        
+
+    with tab3:
+        try:
+            extract_resume_ner()
+            st.subheader(st.session_state.resume_name or "Resume Preview")
+            if not os.path.exists(PROCESSED_RESUME_HIGHLIGHTER_NER_PATH):
+                st.error(f"File not found at {PROCESSED_RESUME_HIGHLIGHTER_NER_PATH}")
+            else:
+                with open(PROCESSED_RESUME_HIGHLIGHTER_NER_PATH, "rb") as f:
+                    pdf_bytes = f.read()
+
+                b64 = base64.b64encode(pdf_bytes).decode()
+                st.markdown(
+                    f"<iframe src='data:application/pdf;base64,{b64}' width='100%' height='700'></iframe>",
+                    unsafe_allow_html=True,
+                )
+        except FileNotFoundError:
+            st.error("Highlighted resume not found. Please run the resume processing first.")
+
+    st.markdown("---")
+    if st.button("Next ➡️", key="final-btn"):
+        st.session_state.page = "final"
+        st.rerun()
+
+
+# --------------------------------------------------
+# PAGE 3 – FINAL VIEW
+# --------------------------------------------------
+
+def page_final():
+    header()
+    st.success("All set! Here's your resume after analysis (no edits applied in this demo).")
+
+    if st.session_state.resume_bytes:
+        if not os.path.exists(PROCESSED_RESUME_HIGHLIGHTER_NER_PATH):
+            st.error(f"File not found at {PROCESSED_RESUME_HIGHLIGHTER_NER_PATH}")
+        else:
+            with open(PROCESSED_RESUME_HIGHLIGHTER_NER_PATH, "rb") as f:
+                pdf_bytes = f.read()
+
+            b64 = base64.b64encode(pdf_bytes).decode()
+            st.markdown(
+                f"<iframe src='data:application/pdf;base64,{b64}' width='100%' height='700'></iframe>",
+                unsafe_allow_html=True,
+            )
+
+    if st.button("Send Email"):
+        send_job_summary_email()
+        st.session_state.page = "upload"
+        st.rerun()
+
+# --------------------------------------------------
+# ROUTER
+# --------------------------------------------------
+if st.session_state.page == "upload":
+    page_upload()
+elif st.session_state.page == "analysis":
+    page_analysis()
+else:
+    page_final()
+

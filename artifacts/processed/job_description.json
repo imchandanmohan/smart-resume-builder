@@ -1,0 +1,124 @@
+{
+  "job_details": {
+    "job_id": "",
+    "job_title": "Machine Learning Engineer",
+    "company_name": "McKesson",
+    "location": "",
+    "employment_type": "",
+    "remote_or_onsite": "",
+    "posted_date": "",
+    "salary_range": "$119,600 - $199,400",
+    "job_description": "The Machine Learning Engineer will support the development of an Enterprise MLOps Platform, leading the integration and engineering of machine learning models, and providing expert consulting to deploy AI solutions.",
+    "responsibilities": [
+      "Implement scalable and reliable systems to handle model inference.",
+      "Deploy and manage machine learning models in production.",
+      "Work on containerization and orchestration solutions.",
+      "Participate in fast iteration cycles.",
+      "Collaborate with ML scientists, engineers for CI/CD pipelines.",
+      "Manage and monitor ML infrastructure.",
+      "Implement monitoring and logging solutions.",
+      "Troubleshoot production issues.",
+      "Ensure compliance with data protection regulations.",
+      "Document MLOps processes and best practices."
+    ],
+    "qualifications": [
+      "Degree or equivalent and typically requires 4+ years of relevant experience."
+    ],
+    "skills_required": [
+      "Full stack development",
+      "Python, Spark, R, DataBricks, Github, MLFlow, Airflow",
+      "Azure Machine Learning",
+      "Cloud-based ML services",
+      "Visualization technologies",
+      "API development",
+      "Unix Shell scripting"
+    ],
+    "experience_level": "Mid to Senior",
+    "industry": "Healthcare",
+    "benefits": [
+      "Competitive compensation package",
+      "Total Rewards including annual bonus or long-term incentives"
+    ],
+    "company_website": "",
+    "application_link": "",
+    "recruiter_name": "",
+    "recruiter_email": "",
+    "visa_sponsorship": "Candidate must be authorized to work in the U.S, now or in the future, without McKesson support.",
+    "deadline_to_apply": "",
+    "interview_process": "",
+    "tools_and_technologies": [
+      "Azure Data Factory",
+      "Azure Databricks",
+      "Azure Kubernetes Service",
+      "Azure Monitor",
+      "AutoML",
+      "Docker",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "language_requirements": [],
+    "education_required": "Bachelor’s or master’s degree in computer science, Data Science, Information Technology or related OR equivalent experience",
+    "notes": ""
+  },
+  "company_summary": {
+    "summary": "McKesson is an impact-driven, Fortune 10 healthcare company focusing on making quality care accessible and affordable.",
+    "writing_style": "Inclusive and collaborative",
+    "candidate_expectations": "Candidates should bring new ideas, grow and thrive in shaping future healthcare solutions.",
+    "resume_tone": "Professional and results-oriented"
+  },
+  "hidden_patterns_analysis": {
+    "action_verbs_frequency": [
+      "implement",
+      "deploy",
+      "collaborate",
+      "manage",
+      "troubleshoot"
+    ],
+    "metric_and_quantification_presence": "",
+    "skill_grouping_patterns": [
+      "MLOps technologies",
+      "Azure stack",
+      "Visualization technologies"
+    ],
+    "seniority_language_detected": "Experience in building and deploying AI/Machine Learning solutions at scale.",
+    "industry_keywords_detected": [
+      "machine learning",
+      "MLOps",
+      "Azure",
+      "Cloud-based services",
+      "AI solutions"
+    ],
+    "soft_skills_detected": [
+      "communication",
+      "interpersonal skills",
+      "flexibility",
+      "relationship building"
+    ],
+    "problem_types_mentioned": [
+      "model performance",
+      "scalability issues",
+      "compliance with regulations"
+    ],
+    "certifications_or_education_emphasis": "Bachelor’s or master's degree OR equivalent experience",
+    "future_vision_language_detected": "Shape the future of health for patients.",
+    "tone_indicator": "Impact-driven and mission-focused"
+  },
+  "mandatory_candidate_qualities": [
+    "Expertise in MLOps",
+    "Strong communication skills",
+    "Experience with Azure stack",
+    "API development skills",
+    "Knowledge of data privacy standards"
+  ],
+  "top_keywords_for_ATS": [
+    "Machine Learning Engineer",
+    "MLOps",
+    "Azure Machine Learning",
+    "Containerization",
+    "Cloud-based ML services"
+  ],
+  "example_resume_bullets": [
+    "Led the integration and engineering of state-of-the-art machine learning models, driving significant business value in multiple projects.",
+    "Collaborated with cross-functional teams to optimize infrastructure and implement best MLOps practices, ensuring high performance and availability."
+  ]
+}

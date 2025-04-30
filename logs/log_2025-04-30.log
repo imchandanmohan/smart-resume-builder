@@ -1,0 +1,847 @@
+2025-04-30 09:42:07,491 - ERROR - __main__ - Execution failed: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/ats_score.py at line 127: ATS analysis failed: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/ats_score.py at line 90: OpenAI API call failed: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 09:42:13,926 - ERROR - __main__ - Execution failed: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/ats_score.py at line 127: ATS analysis failed: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/ats_score.py at line 90: OpenAI API call failed: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 09:44:49,391 - INFO - __main__ - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 09:44:49,392 - INFO - __main__ - Read 3345 characters.
+2025-04-30 09:44:49,392 - INFO - __main__ - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 09:44:49,392 - INFO - __main__ - Read 2683 characters.
+2025-04-30 09:44:49,392 - INFO - __main__ - Building prompt for OpenAI.
+2025-04-30 09:44:49,392 - INFO - __main__ - Sending prompt to OpenAI.
+2025-04-30 09:44:49,392 - INFO - __main__ - Calling OpenAI API...
+2025-04-30 09:44:49,392 - ERROR - __main__ - OpenAI API call failed: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 09:44:49,392 - ERROR - __main__ - Execution failed: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/ats_score.py at line 137: ATS analysis failed: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/ats_score.py at line 93: OpenAI API call failed: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 09:47:16,196 - INFO - __main__ - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 09:47:16,196 - INFO - __main__ - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 09:47:16,196 - INFO - __main__ - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 09:47:16,197 - INFO - __main__ - Read 2683 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 09:47:16,197 - INFO - __main__ - Building prompt for OpenAI.
+2025-04-30 09:47:16,197 - INFO - __main__ - Calling OpenAI API...
+2025-04-30 09:47:38,094 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 09:47:38,102 - INFO - __main__ - Received response from OpenAI.
+2025-04-30 09:47:38,103 - INFO - __main__ - Parsing OpenAI response...
+2025-04-30 09:47:38,103 - INFO - __main__ - Response parsed successfully.
+2025-04-30 09:50:50,643 - INFO - __main__ - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 09:50:50,643 - INFO - __main__ - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 09:50:50,643 - INFO - __main__ - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 09:50:50,643 - INFO - __main__ - Read 2683 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 09:50:50,643 - INFO - __main__ - Building prompt for OpenAI.
+2025-04-30 09:50:50,643 - INFO - __main__ - Calling OpenAI API...
+2025-04-30 09:51:22,199 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 09:51:22,208 - INFO - __main__ - Received response from OpenAI.
+2025-04-30 09:51:22,208 - INFO - __main__ - Parsing OpenAI response...
+2025-04-30 09:51:22,208 - INFO - __main__ - Response parsed successfully.
+2025-04-30 10:04:21,286 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 10:04:21,287 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 10:04:21,356 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:04:21,362 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:04:21,386 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 10:04:21,386 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 10:04:21,386 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 10:04:21,386 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 10:04:21,386 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 10:04:35,391 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:04:35,408 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 10:04:35,408 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 10:04:35,408 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5784
+2025-04-30 10:04:35,411 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 10:04:35,411 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 10:04:35,411 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 10:04:35,412 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:04:35,454 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:04:35,463 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 10:04:35,463 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 10:04:35,463 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 10:04:35,463 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 10:04:35,463 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 10:04:56,199 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:04:56,205 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 10:04:56,205 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 10:04:56,205 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5021
+2025-04-30 10:04:56,208 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 10:04:56,208 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 10:04:56,208 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 10:04:56,210 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 10:04:56,635 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 10:04:56,636 - INFO - src.analyse_pipeline - Total extracted texts to process: 18
+2025-04-30 10:04:56,745 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 10:04:56,746 - INFO - src.analyse_pipeline - Total chunks to process: 3
+2025-04-30 10:04:57,171 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 10:04:57,609 - ERROR - src.analyse_pipeline - Error processing resume and job description
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 281, in process_resume_and_jd
+    os.remove("temp_resume.pdf")
+FileNotFoundError: [Errno 2] No such file or directory: 'temp_resume.pdf'
+2025-04-30 10:09:06,446 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 10:09:06,448 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 10:09:06,523 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:09:06,530 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:09:06,552 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 10:09:06,552 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 10:09:06,552 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 10:09:06,552 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 10:09:06,552 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 10:09:19,043 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:09:19,052 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 10:09:19,053 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 10:09:19,053 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 4591
+2025-04-30 10:09:19,057 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 10:09:19,057 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 10:09:19,057 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 10:09:19,059 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:09:19,114 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:09:19,125 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 10:09:19,125 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 10:09:19,125 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 10:09:19,125 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 10:09:19,125 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 10:09:44,423 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:09:44,430 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 10:09:44,430 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 10:09:44,430 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 7125
+2025-04-30 10:09:44,434 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 10:09:44,434 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 10:09:44,434 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 10:09:44,436 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 10:09:44,859 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 10:09:44,859 - INFO - src.analyse_pipeline - Total extracted texts to process: 14
+2025-04-30 10:09:44,931 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 10:09:44,932 - INFO - src.analyse_pipeline - Total chunks to process: 3
+2025-04-30 10:09:45,364 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 10:09:45,521 - ERROR - src.analyse_pipeline - Error processing resume and job description
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 281, in process_resume_and_jd
+    #os.remove("temp_resume.pdf")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'temp_resume.pdf'
+2025-04-30 10:11:18,928 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:11:18,933 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 10:11:18,933 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:11:18,933 - INFO - src.ats_score - Read 5051 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 10:11:18,933 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 10:11:18,933 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 10:11:41,485 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:11:41,505 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 10:11:41,505 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 10:11:41,505 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 10:12:12,319 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:12:12,320 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 10:12:12,320 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:12:12,321 - INFO - src.ats_score - Read 5051 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 10:12:12,321 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 10:12:12,321 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 10:12:30,729 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:12:30,732 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 10:12:30,732 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 10:12:30,732 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 10:33:42,054 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:33:42,057 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 10:33:42,057 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:33:42,057 - INFO - src.ats_score - Read 5051 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 10:33:42,057 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 10:33:42,058 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 10:34:07,889 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:34:07,898 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 10:34:07,898 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 10:34:07,898 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 10:37:24,947 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:37:24,952 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 10:37:24,952 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:37:24,952 - INFO - src.ats_score - Read 5051 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 10:37:24,952 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 10:37:24,952 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 10:37:44,369 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:37:44,387 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 10:37:44,387 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 10:37:44,388 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 10:45:27,799 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:45:27,802 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 10:45:27,802 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:45:27,802 - INFO - src.ats_score - Read 5051 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 10:45:27,802 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 10:45:27,802 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 10:45:49,549 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:45:49,568 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 10:45:49,568 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 10:45:49,568 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 10:54:37,417 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 10:54:37,418 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 10:54:37,501 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:54:37,505 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:54:37,529 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 10:54:37,529 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 10:54:37,529 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 10:54:37,529 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 10:54:37,529 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 10:54:49,941 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:54:49,962 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 10:54:49,962 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 10:54:49,962 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5802
+2025-04-30 10:54:49,965 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 10:54:49,965 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 10:54:49,965 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 10:54:49,966 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:54:50,005 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:54:50,018 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 10:54:50,018 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 10:54:50,018 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 10:54:50,018 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 10:54:50,018 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 10:55:03,347 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:55:03,354 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 10:55:03,354 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 10:55:03,354 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 4444
+2025-04-30 10:55:03,357 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 10:55:03,357 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 10:55:03,357 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 10:55:03,358 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 10:55:03,784 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 10:55:03,785 - INFO - src.analyse_pipeline - Total extracted texts to process: 18
+2025-04-30 10:55:03,883 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 10:55:03,884 - INFO - src.analyse_pipeline - Total chunks to process: 3
+2025-04-30 10:55:04,317 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 10:55:05,032 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:55:05,032 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 10:55:05,032 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:55:05,032 - INFO - src.ats_score - Read 4902 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 10:55:05,032 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 10:55:05,032 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 10:55:22,496 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:55:22,504 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 10:55:22,504 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 10:55:22,504 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 10:58:18,980 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 10:58:18,982 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 10:58:19,074 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:58:19,082 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:58:19,104 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 10:58:19,104 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 10:58:19,104 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 10:58:19,104 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 10:58:19,104 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 10:58:31,222 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:58:31,242 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 10:58:31,242 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 10:58:31,242 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 4720
+2025-04-30 10:58:31,245 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 10:58:31,245 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 10:58:31,245 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 10:58:31,246 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:58:31,251 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:58:31,269 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 10:58:31,269 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 10:58:31,269 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 10:58:31,269 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 10:58:31,269 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 10:58:40,839 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:58:40,844 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 10:58:40,844 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 10:58:40,844 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 3770
+2025-04-30 10:58:40,845 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 10:58:40,845 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 10:58:40,845 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 10:58:40,846 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 10:58:41,286 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 10:58:41,287 - INFO - src.analyse_pipeline - Total extracted texts to process: 15
+2025-04-30 10:58:41,361 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 10:58:41,362 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 10:58:41,648 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 10:58:42,047 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 10:58:42,047 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 10:58:42,047 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 10:58:42,048 - INFO - src.ats_score - Read 3147 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 10:58:42,048 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 10:58:42,048 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 10:59:12,401 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 10:59:12,408 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 10:59:12,408 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 10:59:12,408 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 11:35:10,363 - INFO - __main__ - Resume loaded. Sending to LLM...
+2025-04-30 11:38:03,146 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 11:38:03,162 - ERROR - __main__ - NER extraction failed: Extra data: line 3 column 1 (char 656)
+2025-04-30 11:41:31,299 - INFO - __main__ - Resume loaded. Sending to LLM...
+2025-04-30 11:44:33,278 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 11:44:33,307 - INFO - __main__ - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 11:47:59,036 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 11:47:59,038 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 11:47:59,038 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 11:47:59,038 - INFO - src.ats_score - Read 3147 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 11:47:59,038 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 11:47:59,038 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 11:48:28,348 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 11:48:28,368 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 11:48:28,368 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 11:48:28,369 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:02:29,322 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 12:02:29,324 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 12:02:29,434 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:02:29,454 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:02:29,474 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 12:02:29,474 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 12:02:29,474 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 12:02:29,474 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 12:02:29,474 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 12:02:50,526 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:02:50,546 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 12:02:50,546 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 12:02:50,546 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5814
+2025-04-30 12:02:50,549 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 12:02:50,549 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 12:02:50,549 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 12:02:50,550 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:02:50,574 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:02:50,587 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 12:02:50,587 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 12:02:50,588 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 12:02:50,588 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 12:02:50,588 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 12:03:06,752 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:03:06,760 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 12:03:06,760 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 12:03:06,761 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 4466
+2025-04-30 12:03:06,763 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 12:03:06,763 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 12:03:06,763 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 12:03:06,765 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 12:03:07,217 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:03:07,218 - INFO - src.analyse_pipeline - Total extracted texts to process: 17
+2025-04-30 12:03:07,315 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:03:07,316 - INFO - src.analyse_pipeline - Total chunks to process: 3
+2025-04-30 12:03:07,758 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 12:03:08,536 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:03:08,536 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 12:03:08,536 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:03:08,536 - INFO - src.ats_score - Read 5051 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 12:03:08,536 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 12:03:08,536 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 12:03:36,861 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:03:36,867 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 12:03:36,867 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 12:03:36,867 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:03:36,927 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 12:03:53,977 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:03:54,022 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:17:34,610 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 12:17:34,613 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 12:17:34,720 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:17:34,745 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:17:34,765 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 12:17:34,765 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 12:17:34,765 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 12:17:34,765 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 12:17:34,765 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 12:17:51,981 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:17:52,011 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 12:17:52,011 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 12:17:52,011 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5773
+2025-04-30 12:17:52,014 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 12:17:52,014 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 12:17:52,014 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 12:17:52,015 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:17:52,061 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:17:52,073 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 12:17:52,073 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 12:17:52,073 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 12:17:52,073 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 12:17:52,073 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 12:18:10,413 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:18:10,429 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 12:18:10,429 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 12:18:10,429 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5195
+2025-04-30 12:18:10,431 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 12:18:10,432 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 12:18:10,432 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 12:18:10,433 - INFO - src.analyse_pipeline - Total chunks to process: 3
+2025-04-30 12:18:11,015 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 12:18:11,550 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:18:11,551 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 12:18:11,551 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:18:11,551 - INFO - src.ats_score - Read 5051 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 12:18:11,551 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 12:18:11,551 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 12:18:38,222 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:18:38,230 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 12:18:38,231 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 12:18:38,231 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:18:38,292 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 12:18:59,079 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:18:59,190 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:31:18,764 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 12:31:18,768 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 12:31:18,846 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:31:18,850 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:31:18,869 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 12:31:18,869 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 12:31:18,869 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 12:31:18,869 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 12:31:18,869 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 12:31:32,519 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:31:32,538 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 12:31:32,538 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 12:31:32,538 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5740
+2025-04-30 12:31:32,541 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 12:31:32,541 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 12:31:32,541 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 12:31:32,546 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:31:32,557 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:31:32,575 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 12:31:32,575 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 12:31:32,575 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 12:31:32,575 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 12:31:32,575 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 12:31:50,308 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:31:50,315 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 12:31:50,315 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 12:31:50,315 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5095
+2025-04-30 12:31:50,317 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 12:31:50,317 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 12:31:50,318 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 12:31:50,319 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 12:31:50,738 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 12:31:50,742 - ERROR - src.analyse_pipeline - Error processing resume and job description
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 277, in process_resume_and_jd
+    rh = ResumeNERHighlighter(RESUME_FILE_PATH, PROCESSED_RESUME_NER_PATH)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/ner_highlighter.py", line 9, in __init__
+    self.phrases = self._load_phrases()
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/ner_highlighter.py", line 15, in _load_phrases
+    with open(self.jsonl_path, 'r', encoding='utf-8') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl'
+2025-04-30 12:33:27,850 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 12:33:27,851 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 12:33:27,911 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:33:27,913 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:33:27,921 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 12:33:27,921 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 12:33:27,921 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 12:33:27,921 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 12:33:27,921 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 12:33:39,470 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:33:39,491 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 12:33:39,492 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 12:33:39,492 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5708
+2025-04-30 12:33:39,494 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 12:33:39,494 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 12:33:39,494 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 12:33:39,495 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:33:39,514 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:33:39,528 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 12:33:39,528 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 12:33:39,528 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 12:33:39,528 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 12:33:39,528 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 12:33:55,337 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:33:55,348 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 12:33:55,348 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 12:33:55,349 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 4934
+2025-04-30 12:33:55,352 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 12:33:55,352 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 12:33:55,352 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 12:33:55,354 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 12:33:55,831 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:33:55,832 - INFO - src.analyse_pipeline - Total extracted texts to process: 19
+2025-04-30 12:33:55,959 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:33:55,960 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 12:33:56,256 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 12:33:57,073 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:33:57,073 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 12:33:57,073 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:33:57,073 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 12:33:57,073 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 12:33:57,073 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 12:34:22,206 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:34:22,213 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 12:34:22,214 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 12:34:22,214 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:34:22,285 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 12:34:39,050 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:34:39,059 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:46:53,090 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:46:53,103 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 12:46:53,103 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:46:53,113 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 12:46:53,113 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 12:46:53,113 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 12:47:07,908 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:47:07,927 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 12:47:07,927 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 12:47:07,927 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:47:08,001 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 12:47:26,338 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:47:26,347 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:47:39,322 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:47:39,323 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 12:47:39,324 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:47:39,324 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 12:47:39,324 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 12:47:39,325 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 12:48:09,555 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:48:09,562 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 12:48:09,563 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 12:48:09,563 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:48:09,583 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 12:48:27,412 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:48:27,422 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:57:24,228 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:57:24,234 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 12:57:24,235 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:57:24,237 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 12:57:24,237 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 12:57:24,237 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 12:57:44,119 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:57:44,138 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 12:57:44,138 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 12:57:44,138 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:57:44,218 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 12:57:58,407 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:57:58,413 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:58:06,425 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:58:06,428 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 12:58:06,428 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:58:06,429 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 12:58:06,429 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 12:58:06,429 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 12:58:41,490 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:58:41,502 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 12:58:41,502 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 12:58:41,502 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:58:41,515 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 12:58:55,689 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:58:55,698 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 12:59:32,996 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 12:59:33,000 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 12:59:33,000 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 12:59:33,001 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 12:59:33,001 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 12:59:33,001 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 12:59:51,708 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 12:59:51,719 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 12:59:51,720 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 12:59:51,720 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 12:59:51,732 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 13:00:13,365 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:00:13,377 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 13:00:18,956 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 13:00:18,957 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 13:00:18,957 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 13:00:18,958 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 13:00:18,958 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 13:00:18,958 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 13:00:39,218 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:00:39,225 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 13:00:39,225 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 13:00:39,225 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 13:00:39,233 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 13:00:57,138 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:00:57,147 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 13:01:47,280 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 13:01:47,288 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 13:01:47,288 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 13:01:47,292 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 13:01:47,292 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 13:01:47,292 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 13:02:05,531 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:02:05,553 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 13:02:05,553 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 13:02:05,553 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 13:02:05,608 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 13:02:23,872 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:02:23,880 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 13:02:31,063 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 13:02:31,064 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 13:02:31,064 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 13:02:31,064 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 13:02:31,065 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 13:02:31,065 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 13:02:50,575 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:02:50,586 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 13:02:50,586 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 13:02:50,586 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 13:02:50,607 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 13:03:14,667 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:03:14,671 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 13:13:00,808 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 13:13:00,809 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 13:13:00,888 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 13:13:00,890 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 13:13:00,909 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 13:13:00,909 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 13:13:00,909 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 13:13:00,910 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 13:13:00,910 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 13:13:16,767 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:13:16,782 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 13:13:16,782 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 13:13:16,783 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5835
+2025-04-30 13:13:16,785 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 13:13:16,785 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 13:13:16,785 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 13:13:16,786 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 13:13:16,802 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 13:13:16,813 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 13:13:16,813 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 13:13:16,813 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 13:13:16,813 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 13:13:16,813 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 13:13:28,868 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:13:28,873 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 13:13:28,874 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 13:13:28,874 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 4766
+2025-04-30 13:13:28,876 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 13:13:28,876 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 13:13:28,876 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 13:13:28,878 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 13:13:29,295 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 13:13:29,295 - INFO - src.analyse_pipeline - Total extracted texts to process: 14
+2025-04-30 13:13:29,382 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 13:13:29,382 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 13:13:29,675 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 13:13:30,393 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 13:13:30,393 - INFO - src.ats_score - Read 2760 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 13:13:30,393 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 13:13:30,393 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 13:13:30,393 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 13:13:30,393 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 13:13:47,703 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:13:47,710 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 13:13:47,711 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 13:13:47,711 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 13:13:47,788 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 13:14:22,353 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:14:22,362 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 13:14:36,660 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 13:14:36,661 - INFO - src.ats_score - Read 2760 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 13:14:36,661 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 13:14:36,662 - INFO - src.ats_score - Read 3858 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 13:14:36,662 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 13:14:36,662 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 13:14:59,892 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:14:59,900 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 13:14:59,900 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 13:14:59,901 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 13:14:59,919 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 13:15:24,120 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 13:15:24,161 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:03:54,312 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 16:03:54,314 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 16:03:54,411 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:03:54,414 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:03:54,433 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 16:03:54,433 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 16:03:54,433 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 16:03:54,433 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 16:03:54,433 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 16:04:12,458 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:04:12,480 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 16:04:12,480 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 16:04:12,480 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 8036
+2025-04-30 16:04:12,483 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 16:04:12,483 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 16:04:12,483 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 16:04:12,485 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:04:12,487 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:04:12,509 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 16:04:12,509 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 16:04:12,509 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 16:04:12,509 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 16:04:12,509 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 16:04:33,417 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:04:33,423 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 16:04:33,423 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 16:04:33,423 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5002
+2025-04-30 16:04:33,426 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 16:04:33,426 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 16:04:33,427 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 16:04:33,429 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 16:04:33,877 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:04:33,879 - INFO - src.analyse_pipeline - Total extracted texts to process: 16
+2025-04-30 16:04:33,971 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:04:33,973 - INFO - src.analyse_pipeline - Total chunks to process: 3
+2025-04-30 16:04:34,409 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 16:04:35,118 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:04:35,118 - INFO - src.ats_score - Read 4365 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 16:04:35,118 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:04:35,118 - INFO - src.ats_score - Read 4881 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 16:04:35,118 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 16:04:35,118 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 16:04:59,394 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:04:59,402 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 16:04:59,403 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 16:04:59,403 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 16:04:59,469 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 16:05:19,014 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:05:19,022 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:07:01,497 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:07:01,499 - INFO - src.ats_score - Read 4365 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 16:07:01,500 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:07:01,500 - INFO - src.ats_score - Read 4881 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 16:07:01,500 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 16:07:01,500 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 16:07:19,639 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:07:19,644 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 16:07:19,644 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 16:07:19,645 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 16:07:19,657 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 16:07:41,745 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:07:41,756 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:15:54,302 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 16:15:54,306 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 16:15:54,400 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:15:54,402 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:15:54,425 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 16:15:54,426 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 16:15:54,426 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 16:15:54,426 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 16:15:54,426 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 16:16:08,143 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:16:08,164 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 16:16:08,165 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 16:16:08,165 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 6011
+2025-04-30 16:16:08,168 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 16:16:08,168 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 16:16:08,168 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 16:16:08,170 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:16:08,206 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:16:08,218 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 16:16:08,218 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 16:16:08,218 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 16:16:08,218 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 16:16:08,218 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 16:16:28,311 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:16:28,324 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 16:16:28,324 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 16:16:28,324 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 7309
+2025-04-30 16:16:28,327 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 16:16:28,327 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 16:16:28,328 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 16:16:28,329 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 16:16:28,759 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:16:28,760 - INFO - src.analyse_pipeline - Total extracted texts to process: 14
+2025-04-30 16:16:28,835 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:16:28,838 - INFO - src.analyse_pipeline - Total chunks to process: 3
+2025-04-30 16:16:29,322 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 16:16:30,038 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:16:30,038 - INFO - src.ats_score - Read 2760 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 16:16:30,038 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:16:30,039 - INFO - src.ats_score - Read 5758 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 16:16:30,039 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 16:16:30,039 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 16:16:43,068 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:16:43,075 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 16:16:43,075 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 16:16:43,075 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 16:16:43,133 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 16:17:06,310 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:17:06,319 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:17:14,115 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:17:14,117 - INFO - src.ats_score - Read 2760 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 16:17:14,117 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:17:14,117 - INFO - src.ats_score - Read 5758 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 16:17:14,117 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 16:17:14,118 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 16:17:33,640 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:17:33,651 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 16:17:33,651 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 16:17:33,651 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 16:17:33,669 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 16:17:51,804 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:17:51,811 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:23:03,226 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 16:23:03,228 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-30 16:23:03,368 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:23:03,371 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:23:03,389 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 16:23:03,389 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 16:23:03,389 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 16:23:03,389 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 16:23:03,389 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 16:23:16,646 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:23:16,665 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 16:23:16,665 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 16:23:16,665 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 6357
+2025-04-30 16:23:16,674 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-30 16:23:16,674 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 16:23:16,674 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-30 16:23:16,676 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:23:16,688 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:23:16,705 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-30 16:23:16,705 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-30 16:23:16,705 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-30 16:23:16,706 - INFO - utils.llm_client - Attempt 1/4
+2025-04-30 16:23:16,706 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-30 16:23:32,577 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:23:32,590 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-30 16:23:32,590 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-30 16:23:32,590 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 4668
+2025-04-30 16:23:32,593 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-30 16:23:32,593 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-30 16:23:32,593 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-30 16:23:32,594 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-30 16:23:33,081 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:23:33,082 - INFO - src.analyse_pipeline - Total extracted texts to process: 23
+2025-04-30 16:23:33,207 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:23:33,209 - INFO - src.analyse_pipeline - Total chunks to process: 3
+2025-04-30 16:23:33,642 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
+2025-04-30 16:23:34,761 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:23:34,762 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 16:23:34,762 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:23:34,762 - INFO - src.ats_score - Read 5758 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 16:23:34,762 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 16:23:34,763 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 16:23:52,033 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:23:52,052 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 16:23:52,053 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 16:23:52,053 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 16:23:52,123 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 16:24:07,666 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:24:07,672 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-30 16:28:19,202 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-30 16:28:19,206 - INFO - src.ats_score - Read 3345 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt.
+2025-04-30 16:28:19,206 - INFO - src.ats_score - Reading file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-30 16:28:19,207 - INFO - src.ats_score - Read 5758 characters from /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt.
+2025-04-30 16:28:19,208 - INFO - src.ats_score - Building prompt for OpenAI.
+2025-04-30 16:28:19,208 - INFO - src.ats_score - Calling OpenAI API...
+2025-04-30 16:28:53,836 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:28:53,850 - INFO - src.ats_score - Received response from OpenAI.
+2025-04-30 16:28:53,851 - INFO - src.ats_score - Parsing OpenAI response...
+2025-04-30 16:28:53,851 - INFO - src.ats_score - Response parsed successfully.
+2025-04-30 16:28:53,863 - INFO - src.ner.extract_resume_ner - Resume loaded. Sending to LLM...
+2025-04-30 16:29:10,375 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-30 16:29:10,382 - INFO - src.ner.extract_resume_ner - ✅ NER extraction complete. Saved to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl

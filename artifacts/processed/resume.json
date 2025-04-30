@@ -1,0 +1,149 @@
+{
+  "full_name": "Chandan Mohan",
+  "email": "chandan.mohan@gwu.edu",
+  "phone_number": "+1-240-990-9298",
+  "linkedin_url": "linkedin.com/in/imchandanmohan",
+  "portfolio_url": "",
+  "location": "Washington, D.C.",
+  "summary": "Experienced software engineer with a strong background in machine learning and data engineering, skilled in building scalable systems and optimizing model deployment.",
+  "skills": [
+    "TensorFlow",
+    "PyTorch",
+    "scikit-learn",
+    "XGBoost",
+    "LightGBM",
+    "SQL",
+    "Apache Spark",
+    "Pandas",
+    "Airflow",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "Flask",
+    "Python",
+    "Java",
+    "C++"
+  ],
+  "education": [
+    {
+      "degree": "Master of Science",
+      "field_of_study": "Computer Science",
+      "school_name": "George Washington University",
+      "start_date": "Dec. 2023",
+      "end_date": "May 2024",
+      "grade_or_gpa": "3.80",
+      "description": "Graduate Teaching Assistant (CSCI 6442 - Advanced DBMS II): Worked on Terraform scripts in AWS to automate infrastructure deployment for distributed systems and data pipelines, enhancing expertise in data warehouse design."
+    }
+  ],
+  "work_experience": [
+    {
+      "job_title": "Consultant",
+      "company_name": "Advaiya Solutions",
+      "location": "Udaipur, IN",
+      "start_date": "Jan 2023",
+      "end_date": "Oct 2023",
+      "responsibilities": [
+        "Worked on implementing deep learning models using TensorFlow for structured and unstructured data.",
+        "Focused on model optimization and deployment.",
+        "Built scalable data pipelines using Apache Beam for real-time and batch processing across Google Cloud Platform."
+      ]
+    },
+    {
+      "job_title": "Senior Software Engineer",
+      "company_name": "VNB Consulting Services",
+      "location": "Bangalore, IN",
+      "start_date": "Jun 2020",
+      "end_date": "Dec 2022",
+      "responsibilities": [
+        "Built services for email, push, and in-app notifications with features like delivery time optimization, tracking, queuing, and A/B testing.",
+        "Developed a bulk data processing and injection system from Hadoop to Cassandra with a REST API layer for serving offline data.",
+        "Used Dataduct (open-source) for building reusable and automated data pipelines, improving engineering efficiency.",
+        "Designed an internal crowdsourcing platform to embed and manage surveys across the Coursera ecosystem.",
+        "Set up Docker-based analytics environments on AWS, standardizing Python and R libraries used by data science teams.",
+        "Contributed to core recommendation systems for Coursera’s homepage and discovery.",
+        "Supported both training and real-time inference.",
+        "Improved search and browsing experience with onboarding personalization, ranking improvements, and indexing optimization."
+      ]
+    }
+  ],
+  "certifications": [],
+  "languages": [
+    "Python",
+    "Java",
+    "C++"
+  ],
+  "projects": [
+    {
+      "project_name": "Credit Risk Prediction System",
+      "description": [
+        "Developed an ML pipeline using Logistic Regression and XGBoost to predict credit risk with 87% accuracy.",
+        "Performed feature engineering and hyperparameter tuning, improving AUC-ROC by 12%.",
+        "Deployed model via Flask API and integrated into a dashboard for real-time decision-making.",
+        "Applied augmentation techniques to reduce overfitting and cut training time by 86%.",
+        "Built services for email, push, and in-app notifications.",
+        "Designed an internal crowdsourcing platform to embed and manage surveys across the Coursera ecosystem."
+      ],
+      "technologies_used": [
+        "Logistic Regression",
+        "XGBoost",
+        "Flask"
+      ]
+    },
+    {
+      "project_name": "Image Classification using Transfer Learning",
+      "description": [
+        "Fine-tuned ResNet50 and EfficientNet models to classify medical images with 92% validation accuracy.",
+        "Set up Docker-based analytics environments on AWS, standardizing Python and R libraries used by data science teams.",
+        "Built services for email, push, and in-app notifications with features like delivery time optimization, tracking, queuing, and A/B testing.",
+        "Used MLflow for experiment tracking and versioning to ensure reproducibility.",
+        "Applied augmentation techniques to reduce overfitting and cut training time by 50%."
+      ],
+      "technologies_used": [
+        "ResNet50",
+        "EfficientNet",
+        "Docker",
+        "AWS"
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "volunteer_experience": [],
+  "notes": "",
+  "candidate_summary": "Versatile computer science professional with a strong academic background and hands-on experience in machine learning, cloud computing, and data engineering projects. Proven expertise in building effective models and scalable systems.",
+  "core_skills_and_technologies": [
+    "Machine Learning",
+    "Data Engineering",
+    "Cloud Computing",
+    "Model Deployment"
+  ],
+  "work_experience_summary": [
+    "Consultant at Advaiya Solutions focusing on deep learning models and scalable pipelines.",
+    "Senior Software Engineer at VNB Consulting Services developing systems for large-scale data processing and optimization."
+  ],
+  "education_summary": [
+    "Master of Science in Computer Science from George Washington University, enhancing experience in distributed systems and data warehouse design."
+  ],
+  "certifications_summary": [],
+  "languages_known": [
+    "Python",
+    "Java",
+    "C++"
+  ],
+  "soft_skills_detected": [
+    "Problem-solving",
+    "Collaboration",
+    "Adaptability"
+  ],
+  "resume_writing_style": "Direct and technical, highlighting core strengths and projects in a structured format.",
+  "strengths_detected": [
+    "Technical proficiency in machine learning and data engineering.",
+    "Experience with scalable cloud systems.",
+    "Strong academic background."
+  ],
+  "areas_for_improvement": [
+    "Inclusion of detail on certifications or additional courses.",
+    "Expansion on volunteer or extracurricular activities."
+  ],
+  "overall_resume_impression": "A technically sound resume emphasizing relevant skills and projects in the field of computer science with a strong focus on machine learning and cloud deployments."
+}
