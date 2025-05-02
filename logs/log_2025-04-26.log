@@ -1,0 +1,29 @@
+2025-04-26 01:09:20,467 - INFO - __main__ - Running ResumeExtractor...
+2025-04-26 01:09:20,471 - INFO - __main__ - Extracting resume data...
+2025-04-26 01:09:20,473 - INFO - __main__ - Found section header 'RELEVANT EXPERIENCE' for key 'responsibilities'
+2025-04-26 01:09:20,473 - INFO - __main__ - Found section header 'Built an automated image labeling plugin, reducing manual work by 40 hours per week and enhancing data organization.' for key 'company'
+2025-04-26 01:09:20,473 - INFO - __main__ - Found section header 'RELEVANT TECHNICAL SKILLS' for key 'relevant_technical_skills'
+2025-04-26 01:09:20,474 - INFO - __main__ - Found section header 'TECHNICAL PROJECTS' for key 'technical_projects'
+2025-04-26 01:09:20,474 - INFO - __main__ - Found section header 'EDUCATION' for key 'education'
+2025-04-26 01:09:20,478 - WARNING - __main__ - No data found for section: requirements
+2025-04-26 01:09:20,478 - WARNING - __main__ - No data found for section: preferred
+2025-04-26 01:09:20,480 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-26 01:09:20,480 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-26 01:09:20,480 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-26 01:09:20,480 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-26 01:09:20,484 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-26 01:09:20,484 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-26 01:09:20,484 - INFO - __main__ - Extracting skills from job description text.
+2025-04-26 01:09:20,488 - INFO - __main__ - Extraction completed.
+2025-04-26 23:18:19,648 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-26 23:18:19,778 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-26 23:18:19,897 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-26 23:18:20,143 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-26 23:46:29,889 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-26 23:46:29,965 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-26 23:46:29,971 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-26 23:46:29,991 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-26 23:51:24,247 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-26 23:51:24,315 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-26 23:51:24,324 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-26 23:51:24,341 - INFO - utils.llm_client - LLMClient initialized successfully.

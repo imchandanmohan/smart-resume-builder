@@ -1,0 +1,450 @@
+2025-04-20 03:15:04,774 - INFO - __main__ - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/Resume.pdf
+2025-04-20 03:15:04,797 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/textfile.txt
+2025-04-20 03:52:07,712 - INFO - __main__ - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-20 03:52:07,713 - ERROR - __main__ - The PDF file /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf does not exist.
+2025-04-20 03:52:45,422 - INFO - __main__ - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-20 03:52:45,423 - ERROR - __main__ - The PDF file /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf does not exist.
+2025-04-20 03:53:10,209 - INFO - __main__ - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.pdf
+2025-04-20 03:53:10,232 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 03:54:08,108 - INFO - __main__ - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.pdf
+2025-04-20 03:54:08,133 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 03:55:43,332 - INFO - __main__ - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.pdf
+2025-04-20 03:55:43,359 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.txt
+2025-04-20 04:21:58,689 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 04:22:29,017 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 04:22:37,073 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 04:24:34,291 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 04:29:48,901 - INFO - __main__ - Running JobDescriptionExtractor as script.
+2025-04-20 04:29:48,902 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 04:29:48,902 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 04:29:48,908 - INFO - __main__ - Successfully loaded job description with utf-8 encoding.
+2025-04-20 04:29:48,908 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 04:29:48,908 - INFO - __main__ - Starting full job description extraction.
+2025-04-20 04:29:48,908 - INFO - __main__ - Extracting all defined sections from job description.
+2025-04-20 04:29:48,908 - INFO - __main__ - Extracting section: skills
+2025-04-20 04:29:48,908 - INFO - __main__ - Extracting section: skills
+2025-04-20 04:29:48,909 - INFO - __main__ - Section 'skills' extracted successfully.
+2025-04-20 04:29:48,909 - INFO - __main__ - Section 'skills' content saved.
+2025-04-20 04:29:48,909 - INFO - __main__ - Extracting section: responsibilities
+2025-04-20 04:29:48,909 - INFO - __main__ - Extracting section: responsibilities
+2025-04-20 04:29:48,909 - INFO - __main__ - Found section header: Responsibilities:
+2025-04-20 04:29:48,909 - INFO - __main__ - Detected potential start of next section.
+2025-04-20 04:29:48,909 - INFO - __main__ - Section 'responsibilities' extracted successfully.
+2025-04-20 04:29:48,909 - INFO - __main__ - Section 'responsibilities' content saved.
+2025-04-20 04:29:48,909 - INFO - __main__ - Extracting section: requirements
+2025-04-20 04:29:48,909 - INFO - __main__ - Extracting section: requirements
+2025-04-20 04:29:48,910 - INFO - __main__ - Section 'requirements' extracted successfully.
+2025-04-20 04:29:48,910 - INFO - __main__ - Section 'requirements' content saved.
+2025-04-20 04:29:48,910 - INFO - __main__ - Extracting section: preferred
+2025-04-20 04:29:48,910 - INFO - __main__ - Extracting section: preferred
+2025-04-20 04:29:48,910 - INFO - __main__ - Section 'preferred' extracted successfully.
+2025-04-20 04:29:48,910 - INFO - __main__ - Section 'preferred' content saved.
+2025-04-20 04:29:48,910 - INFO - __main__ - Extracting section: company
+2025-04-20 04:29:48,910 - INFO - __main__ - Extracting section: company
+2025-04-20 04:29:48,910 - INFO - __main__ - Section 'company' extracted successfully.
+2025-04-20 04:29:48,910 - INFO - __main__ - Section 'company' content saved.
+2025-04-20 04:29:48,910 - INFO - __main__ - All sections extracted.
+2025-04-20 04:29:48,910 - INFO - __main__ - Extracting required skills from job description.
+2025-04-20 04:29:48,911 - INFO - __main__ - Skills extracted: ['Machine Learning', 'AWS', 'Python']
+2025-04-20 04:29:48,911 - INFO - __main__ - Saving extracted job description data to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.json
+2025-04-20 04:29:48,912 - INFO - __main__ - Successfully saved job description data to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.json
+2025-04-20 04:29:48,912 - INFO - __main__ - Job description extraction completed successfully.
+2025-04-20 04:33:35,296 - INFO - __main__ - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.pdf
+2025-04-20 04:33:35,322 - INFO - __main__ - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.txt
+2025-04-20 04:40:08,365 - INFO - __main__ - Running ResumeExtractor as script.
+2025-04-20 04:40:08,366 - ERROR - __main__ - Error during extraction process.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/.venv/lib/python3.13/site-packages/pdfplumber/pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/.venv/lib/python3.13/site-packages/pdfminer/pdfdocument.py", line 738, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 203, in <module>
+    resume_extractor = ResumeExtractor(
+        TEMPFILES_PROCESSED_RESUME_TEXT_FILE_PATH,
+        TEMPFILES_PROCESSED_RESUME_JSON_FILE_PATH
+    )
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 18, in __init__
+    self.text = self._extract_text_from_pdf()
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 23, in _extract_text_from_pdf
+    with pdfplumber.open(self.pdf_path) as pdf:
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/.venv/lib/python3.13/site-packages/pdfplumber/pdf.py", line 107, in open
+    return cls(
+        stream,
+    ...<7 lines>...
+        raise_unicode_errors=raise_unicode_errors,
+    )
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/.venv/lib/python3.13/site-packages/pdfplumber/pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+2025-04-20 04:41:30,856 - INFO - __main__ - Running ResumeExtractor as script.
+2025-04-20 04:41:30,856 - INFO - __main__ - Extracting text from PDF: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.txt
+2025-04-20 04:41:30,856 - ERROR - __main__ - Error during extraction process.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 216, in <module>
+    resume_extractor = ResumeExtractor(
+        TEMPFILES_PROCESSED_RESUME_TEXT_FILE_PATH,
+        TEMPFILES_PROCESSED_RESUME_JSON_FILE_PATH
+    )
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 19, in __init__
+    self.text = self._extract_text_from_pdf()
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 26, in _extract_text_from_pdf
+    if not self.pdf_path.lower().endswith('.pdf'):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PosixPath' object has no attribute 'lower'. Did you mean: 'owner'?
+2025-04-20 04:41:35,773 - INFO - __main__ - Running ResumeExtractor as script.
+2025-04-20 04:41:35,773 - INFO - __main__ - Extracting text from PDF: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.txt
+2025-04-20 04:41:35,773 - ERROR - __main__ - Error during extraction process.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 216, in <module>
+    resume_extractor = ResumeExtractor(
+        TEMPFILES_PROCESSED_RESUME_TEXT_FILE_PATH,
+        TEMPFILES_PROCESSED_RESUME_JSON_FILE_PATH
+    )
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 19, in __init__
+    self.text = self._extract_text_from_pdf()
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 26, in _extract_text_from_pdf
+    if not self.pdf_path.lower().endswith('.pdf'):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PosixPath' object has no attribute 'lower'. Did you mean: 'owner'?
+2025-04-20 04:43:06,240 - INFO - __main__ - Running ResumeExtractor as script.
+2025-04-20 04:43:06,240 - INFO - __main__ - Extracting text from PDF: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.txt
+2025-04-20 04:43:06,240 - ERROR - __main__ - Error during extraction process.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 207, in <module>
+    resume_extractor = ResumeExtractor(
+        TEMPFILES_PROCESSED_RESUME_TEXT_FILE_PATH,
+        TEMPFILES_PROCESSED_RESUME_JSON_FILE_PATH
+    )
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 22, in __init__
+    self.text = self._extract_text_from_pdf()
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 30, in _extract_text_from_pdf
+    raise CustomException(f"The file is not a PDF: {self.pdf_path}")
+          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CustomException.__init__() missing 1 required positional argument: 'error_detail'
+2025-04-20 04:43:23,635 - INFO - __main__ - Running ResumeExtractor as script.
+2025-04-20 04:43:23,635 - INFO - __main__ - Extracting text from PDF: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.txt
+2025-04-20 04:43:23,636 - ERROR - __main__ - Error during extraction process.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 207, in <module>
+    resume_extractor = ResumeExtractor(
+        TEMPFILES_PROCESSED_RESUME_TEXT_FILE_PATH,
+        TEMPFILES_PROCESSED_RESUME_JSON_FILE_PATH
+    )
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 22, in __init__
+    self.text = self._extract_text_from_pdf()
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 30, in _extract_text_from_pdf
+    raise CustomException(f"The file is not a PDF: {self.pdf_path}")
+          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CustomException.__init__() missing 1 required positional argument: 'error_detail'
+2025-04-20 04:44:36,308 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 04:44:36,309 - INFO - __main__ - Loading resume text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.txt
+2025-04-20 04:44:36,312 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 04:44:36,312 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 04:44:36,312 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 04:44:36,312 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 04:44:36,313 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 04:44:36,313 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 04:44:36,314 - INFO - __main__ - Extraction completed.
+2025-04-20 04:47:02,877 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 04:47:02,881 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 04:47:02,881 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 04:47:02,881 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 04:47:02,881 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 04:47:02,882 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 04:47:02,882 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 04:47:02,883 - INFO - __main__ - Extraction completed.
+2025-04-20 13:28:54,707 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:28:54,710 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 13:28:54,710 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 13:28:54,710 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 13:28:54,711 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 13:28:54,711 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 13:28:54,711 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 13:28:54,712 - INFO - __main__ - Extraction completed.
+2025-04-20 13:31:09,318 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:31:09,322 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 13:31:09,322 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 13:31:09,322 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 13:31:09,323 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 13:31:09,323 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 13:31:09,323 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 13:31:09,325 - INFO - __main__ - Extraction completed.
+2025-04-20 13:35:51,908 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:35:51,912 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 13:35:51,912 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 13:35:51,912 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 13:35:51,913 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 13:35:51,913 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 13:35:51,913 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 13:35:51,915 - INFO - __main__ - Extraction completed.
+2025-04-20 13:35:58,632 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:35:58,635 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 13:35:58,635 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 13:35:58,635 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 13:35:58,635 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 13:35:58,636 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 13:35:58,636 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 13:35:58,637 - INFO - __main__ - Extraction completed.
+2025-04-20 13:37:35,521 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:37:35,524 - ERROR - __main__ - Fatal error during main execution.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 235, in <module>
+    resume_extractor.extract_all()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 115, in extract_all
+    self.extract_skills()
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ResumeExtractor' object has no attribute 'extract_skills'. Did you mean: 'extract_all'?
+2025-04-20 13:39:15,352 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:39:15,354 - ERROR - __main__ - Fatal error during main execution.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 235, in <module>
+    resume_extractor.extract_all()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 115, in extract_all
+    self.extract_skills_from_dict()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 98, in extract_skills_from_dict
+    str(text_fields.get(field, "")) for field in text_fields
+                                                 ^^^^^^^^^^^
+TypeError: 'ResumeExtractor' object is not iterable
+2025-04-20 13:39:27,402 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:39:27,405 - ERROR - __main__ - Fatal error during main execution.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 235, in <module>
+    resume_extractor.extract_all()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 115, in extract_all
+    self.extract_skills_from_dict()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 98, in extract_skills_from_dict
+    str(text_fields.get(field, "")) for field in text_fields
+                                                 ^^^^^^^^^^^
+TypeError: 'ResumeExtractor' object is not iterable
+2025-04-20 13:42:59,294 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:42:59,297 - ERROR - __main__ - Fatal error during main execution.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 226, in <module>
+    resume_extractor.extract_all()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 115, in extract_all
+    self.extract_skills_from_dict()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 98, in extract_skills_from_dict
+    str(text_fields.get(field, "")) for field in text_fields
+                                                 ^^^^^^^^^^^
+TypeError: 'ResumeExtractor' object is not iterable
+2025-04-20 13:56:01,013 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:56:01,014 - INFO - __main__ - Starting extraction process...
+2025-04-20 13:56:01,016 - INFO - __main__ - Extraction complete. JSON saved to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 13:56:01,016 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 13:56:01,017 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 13:56:01,017 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 13:56:01,017 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 13:56:01,017 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 13:56:01,017 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 13:56:01,019 - INFO - __main__ - Extraction completed.
+2025-04-20 13:56:26,799 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 13:56:26,800 - INFO - __main__ - Starting extraction process...
+2025-04-20 13:56:26,802 - INFO - __main__ - Extraction complete. JSON saved to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 13:56:26,802 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 13:56:26,802 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 13:56:26,802 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 13:56:26,803 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 13:56:26,803 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 13:56:26,803 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 13:56:26,804 - INFO - __main__ - Extraction completed.
+2025-04-20 14:00:19,520 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 14:00:19,521 - INFO - __main__ - Extracting resume data...
+2025-04-20 14:00:19,522 - INFO - __main__ - Done. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 14:00:19,522 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 14:00:19,522 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 14:00:19,522 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 14:00:19,523 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 14:00:19,523 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 14:00:19,523 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 14:00:19,524 - INFO - __main__ - Extraction completed.
+2025-04-20 14:49:00,653 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 14:49:00,654 - INFO - __main__ - Extracting resume data...
+2025-04-20 14:49:00,655 - INFO - __main__ - Done. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 14:49:00,655 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 14:49:00,655 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 14:49:00,655 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 14:49:00,655 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 14:49:00,656 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 14:49:00,656 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 14:49:00,657 - INFO - __main__ - Extraction completed.
+2025-04-20 14:54:33,585 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 14:54:33,587 - INFO - __main__ - Extracting resume data...
+2025-04-20 14:54:33,587 - ERROR - __main__ - Failed during resume extraction.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 126, in extract_all
+    self.extract_skills()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 115, in extract_skills
+    combined_text = self.text + ' ' + ' '.join(self.data.get(k, '') for k in SECTION_ALIASES)
+                                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, list found
+2025-04-20 14:54:33,591 - ERROR - __main__ - Fatal error during main execution.
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 126, in extract_all
+    self.extract_skills()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 115, in extract_skills
+    combined_text = self.text + ' ' + ' '.join(self.data.get(k, '') for k in SECTION_ALIASES)
+                                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, list found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 239, in <module>
+    resume_extractor.extract_all()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py", line 136, in extract_all
+    raise CustomException("Error during resume extraction.", e)
+src.custom_exception.CustomException: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/information_extractor.py at line 126: Error during resume extraction.
+2025-04-20 14:57:36,234 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 14:57:36,236 - INFO - __main__ - Extracting resume data...
+2025-04-20 14:57:36,237 - WARNING - __main__ - No data found for section: profiles
+2025-04-20 14:57:36,237 - WARNING - __main__ - No data found for section: responsibilities
+2025-04-20 14:57:36,237 - WARNING - __main__ - No data found for section: requirements
+2025-04-20 14:57:36,237 - WARNING - __main__ - No data found for section: preferred
+2025-04-20 14:57:36,237 - WARNING - __main__ - No data found for section: company
+2025-04-20 14:57:36,238 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 14:57:36,238 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 14:57:36,238 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 14:57:36,238 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 14:57:36,238 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 14:57:36,238 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 14:57:36,238 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 14:57:36,240 - INFO - __main__ - Extraction completed.
+2025-04-20 14:59:10,050 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 14:59:10,053 - INFO - __main__ - Extracting resume data...
+2025-04-20 14:59:10,054 - WARNING - __main__ - No data found for section: profiles
+2025-04-20 14:59:10,054 - WARNING - __main__ - No data found for section: responsibilities
+2025-04-20 14:59:10,054 - WARNING - __main__ - No data found for section: requirements
+2025-04-20 14:59:10,054 - WARNING - __main__ - No data found for section: preferred
+2025-04-20 14:59:10,054 - WARNING - __main__ - No data found for section: company
+2025-04-20 14:59:10,055 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 14:59:10,055 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 14:59:10,055 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 14:59:10,055 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 14:59:10,055 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 14:59:10,055 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 14:59:10,056 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 14:59:10,057 - INFO - __main__ - Extraction completed.
+2025-04-20 15:00:23,940 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 15:00:23,943 - INFO - __main__ - Extracting resume data...
+2025-04-20 15:00:23,944 - WARNING - __main__ - No data found for section: profiles
+2025-04-20 15:00:23,944 - WARNING - __main__ - No data found for section: responsibilities
+2025-04-20 15:00:23,945 - WARNING - __main__ - No data found for section: requirements
+2025-04-20 15:00:23,945 - WARNING - __main__ - No data found for section: preferred
+2025-04-20 15:00:23,945 - WARNING - __main__ - No data found for section: company
+2025-04-20 15:00:23,945 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 15:00:23,945 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 15:00:23,945 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 15:00:23,945 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 15:00:23,946 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 15:00:23,946 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 15:00:23,946 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 15:00:23,947 - INFO - __main__ - Extraction completed.
+2025-04-20 15:02:59,058 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 15:02:59,060 - INFO - __main__ - Extracting resume data...
+2025-04-20 15:02:59,062 - WARNING - __main__ - No data found for section: responsibilities
+2025-04-20 15:02:59,062 - WARNING - __main__ - No data found for section: requirements
+2025-04-20 15:02:59,062 - WARNING - __main__ - No data found for section: preferred
+2025-04-20 15:02:59,062 - WARNING - __main__ - No data found for section: company
+2025-04-20 15:02:59,062 - WARNING - __main__ - No data found for section: technical_projects
+2025-04-20 15:02:59,062 - WARNING - __main__ - No data found for section: education
+2025-04-20 15:02:59,062 - WARNING - __main__ - No data found for section: relevant_technical_skills
+2025-04-20 15:02:59,062 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 15:02:59,062 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 15:02:59,062 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 15:02:59,063 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 15:02:59,063 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 15:02:59,063 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 15:02:59,063 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 15:02:59,064 - INFO - __main__ - Extraction completed.
+2025-04-20 15:03:10,243 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 15:03:10,243 - INFO - __main__ - Extracting resume data...
+2025-04-20 15:03:10,246 - WARNING - __main__ - No data found for section: responsibilities
+2025-04-20 15:03:10,246 - WARNING - __main__ - No data found for section: requirements
+2025-04-20 15:03:10,246 - WARNING - __main__ - No data found for section: preferred
+2025-04-20 15:03:10,246 - WARNING - __main__ - No data found for section: company
+2025-04-20 15:03:10,246 - WARNING - __main__ - No data found for section: technical_projects
+2025-04-20 15:03:10,246 - WARNING - __main__ - No data found for section: education
+2025-04-20 15:03:10,246 - WARNING - __main__ - No data found for section: relevant_technical_skills
+2025-04-20 15:03:10,246 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 15:03:10,246 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 15:03:10,246 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 15:03:10,246 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 15:03:10,246 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 15:03:10,246 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 15:03:10,247 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 15:03:10,248 - INFO - __main__ - Extraction completed.
+2025-04-20 15:04:58,210 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 15:04:58,212 - INFO - __main__ - Extracting resume data...
+2025-04-20 15:04:58,212 - INFO - __main__ - Found section header 'RELEVANT TECHNICAL SKILLS' for key 'skills'
+2025-04-20 15:04:58,214 - WARNING - __main__ - No data found for section: responsibilities
+2025-04-20 15:04:58,214 - WARNING - __main__ - No data found for section: requirements
+2025-04-20 15:04:58,214 - WARNING - __main__ - No data found for section: preferred
+2025-04-20 15:04:58,214 - WARNING - __main__ - No data found for section: company
+2025-04-20 15:04:58,214 - WARNING - __main__ - No data found for section: technical_projects
+2025-04-20 15:04:58,214 - WARNING - __main__ - No data found for section: education
+2025-04-20 15:04:58,214 - WARNING - __main__ - No data found for section: relevant_technical_skills
+2025-04-20 15:04:58,214 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 15:04:58,214 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 15:04:58,215 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 15:04:58,215 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 15:04:58,215 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 15:04:58,215 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 15:04:58,215 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 15:04:58,216 - INFO - __main__ - Extraction completed.
+2025-04-20 15:05:10,271 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 15:05:10,271 - INFO - __main__ - Extracting resume data...
+2025-04-20 15:05:10,272 - INFO - __main__ - Found section header 'RELEVANT TECHNICAL SKILLS' for key 'skills'
+2025-04-20 15:05:10,273 - WARNING - __main__ - No data found for section: responsibilities
+2025-04-20 15:05:10,273 - WARNING - __main__ - No data found for section: requirements
+2025-04-20 15:05:10,273 - WARNING - __main__ - No data found for section: preferred
+2025-04-20 15:05:10,273 - WARNING - __main__ - No data found for section: company
+2025-04-20 15:05:10,273 - WARNING - __main__ - No data found for section: technical_projects
+2025-04-20 15:05:10,273 - WARNING - __main__ - No data found for section: education
+2025-04-20 15:05:10,273 - WARNING - __main__ - No data found for section: relevant_technical_skills
+2025-04-20 15:05:10,274 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 15:05:10,274 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 15:05:10,274 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 15:05:10,274 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 15:05:10,274 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 15:05:10,274 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 15:05:10,274 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 15:05:10,275 - INFO - __main__ - Extraction completed.
+2025-04-20 15:15:02,813 - INFO - __main__ - Running ResumeExtractor...
+2025-04-20 15:15:02,814 - INFO - __main__ - Extracting resume data...
+2025-04-20 15:15:02,815 - INFO - __main__ - Found section header 'RELEVANT EXPERIENCE' for key 'responsibilities'
+2025-04-20 15:15:02,815 - INFO - __main__ - Found section header 'Built an automated image labeling plugin, reducing manual work by 40 hours per week and enhancing data organization.' for key 'company'
+2025-04-20 15:15:02,815 - INFO - __main__ - Found section header 'RELEVANT TECHNICAL SKILLS' for key 'relevant_technical_skills'
+2025-04-20 15:15:02,815 - INFO - __main__ - Found section header 'TECHNICAL PROJECTS' for key 'technical_projects'
+2025-04-20 15:15:02,815 - INFO - __main__ - Found section header 'EDUCATION' for key 'education'
+2025-04-20 15:15:02,817 - WARNING - __main__ - No data found for section: requirements
+2025-04-20 15:15:02,817 - WARNING - __main__ - No data found for section: preferred
+2025-04-20 15:15:02,818 - INFO - __main__ - Extraction complete. JSON written to /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/resume.json
+2025-04-20 15:15:02,818 - INFO - __main__ - Running JobDescriptionExtractor...
+2025-04-20 15:15:02,818 - INFO - __main__ - Initializing JobDescriptionExtractor
+2025-04-20 15:15:02,818 - INFO - __main__ - Loading job description text from file: /Users/chandanmohan/Desktop/smart-resume-builder/junk_files/job_description.txt
+2025-04-20 15:15:02,818 - INFO - __main__ - JobDescriptionExtractor initialized successfully.
+2025-04-20 15:15:02,818 - INFO - __main__ - Extracting job description sections based on keywords.
+2025-04-20 15:15:02,818 - INFO - __main__ - Extracting skills from job description text.
+2025-04-20 15:15:02,820 - INFO - __main__ - Extraction completed.

@@ -1,0 +1,171 @@
+2025-04-29 15:42:50,470 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-29 15:42:50,500 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-29 15:42:50,721 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-29 15:42:50,721 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-29 15:42:50,721 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-29 15:42:50,721 - INFO - utils.llm_client - Attempt 1/4
+2025-04-29 15:42:50,721 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-29 15:43:08,837 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-29 15:43:08,855 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-29 15:43:08,855 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-29 15:43:08,855 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 3808
+2025-04-29 15:43:08,865 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-29 15:43:08,865 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-29 15:43:08,865 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-29 15:43:08,865 - ERROR - src.analyse_pipeline - Error running NER and saving output
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 117, in run_ner_and_save
+    with open(text_path, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt'
+2025-04-29 15:43:08,869 - ERROR - src.analyse_pipeline - Error processing resume and job description
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 117, in run_ner_and_save
+    with open(text_path, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 268, in process_resume_and_jd
+    run_ner_and_save(PROCESSED_RESUME_TEXT_FILE_PATH, PROCESSED_RESUME_NER_PATH, False)
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 166, in run_ner_and_save
+    raise CustomException(e, sys)
+src.custom_exception.CustomException: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py at line 117: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt'
+2025-04-29 15:44:09,270 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-29 15:44:09,281 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-29 15:44:09,310 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-29 15:44:09,311 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-29 15:44:09,311 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-29 15:44:09,311 - INFO - utils.llm_client - Attempt 1/4
+2025-04-29 15:44:09,311 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-29 15:44:23,586 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-29 15:44:23,596 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-29 15:44:23,597 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-29 15:44:23,597 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 3803
+2025-04-29 15:44:23,600 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-29 15:44:23,600 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-29 15:44:23,600 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-29 15:44:23,601 - ERROR - src.analyse_pipeline - Error running NER and saving output
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 117, in run_ner_and_save
+    with open(text_path, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt'
+2025-04-29 15:44:23,603 - ERROR - src.analyse_pipeline - Error processing resume and job description
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 117, in run_ner_and_save
+    with open(text_path, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 268, in process_resume_and_jd
+    run_ner_and_save(PROCESSED_RESUME_TEXT_FILE_PATH, PROCESSED_RESUME_NER_PATH, False)
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 166, in run_ner_and_save
+    raise CustomException(e, sys)
+src.custom_exception.CustomException: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py at line 117: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt'
+2025-04-29 15:51:21,185 - INFO - utils.common_functions - PDF to text conversion started for file: temp_resume.pdf
+2025-04-29 15:51:21,283 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-29 15:51:21,285 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-29 15:51:21,300 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-29 15:51:21,371 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-29 15:51:21,371 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-29 15:51:21,371 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-29 15:51:21,371 - INFO - utils.llm_client - Attempt 1/4
+2025-04-29 15:51:21,371 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-29 15:51:32,964 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-29 15:51:32,981 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-29 15:51:32,981 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-29 15:51:32,981 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 3529
+2025-04-29 15:51:32,984 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-29 15:51:32,984 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-29 15:51:32,984 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-29 15:51:33,002 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-29 15:51:33,432 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-29 15:51:33,432 - ERROR - src.analyse_pipeline - Error extracting texts from resume JSON
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 170, in extract_texts_from_resume_json
+    with open(resume_json_path, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json'
+2025-04-29 15:51:33,433 - ERROR - src.analyse_pipeline - Error processing resume from JSON
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 170, in extract_texts_from_resume_json
+    with open(resume_json_path, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 294, in process_resume_from_json
+    extracted_texts = extract_texts_from_resume_json(PROCESSED_RESUME_JSON_FILE_PATH)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 211, in extract_texts_from_resume_json
+    raise CustomException(e, sys)
+src.custom_exception.CustomException: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py at line 170: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json'
+2025-04-29 15:51:33,434 - ERROR - src.analyse_pipeline - Error processing resume and job description
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 170, in extract_texts_from_resume_json
+    with open(resume_json_path, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 294, in process_resume_from_json
+    extracted_texts = extract_texts_from_resume_json(PROCESSED_RESUME_JSON_FILE_PATH)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 211, in extract_texts_from_resume_json
+    raise CustomException(e, sys)
+src.custom_exception.CustomException: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py at line 170: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 278, in process_resume_and_jd
+    process_resume_from_json()
+  File "/Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py", line 299, in process_resume_from_json
+    raise CustomException(e, sys)
+src.custom_exception.CustomException: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py at line 294: Issue in /Users/chandanmohan/Desktop/smart-resume-builder/src/analyse_pipeline.py at line 170: [Errno 2] No such file or directory: '/Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json'
+2025-04-29 15:55:58,668 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-29 15:55:58,671 - INFO - utils.common_functions - PDF to text conversion started for file: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/resume/resume.pdf
+2025-04-29 15:55:58,787 - INFO - utils.common_functions - Successfully saved extracted text to: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-29 15:55:58,793 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.txt
+2025-04-29 15:55:58,863 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-29 15:55:58,863 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-29 15:55:58,863 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-29 15:55:58,863 - INFO - utils.llm_client - Attempt 1/4
+2025-04-29 15:55:58,863 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-29 15:56:12,325 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-29 15:56:12,356 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-29 15:56:12,356 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-29 15:56:12,356 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 5592
+2025-04-29 15:56:12,365 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume.json
+2025-04-29 15:56:12,365 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-29 15:56:12,365 - INFO - src.analyse_pipeline - Resume extracted successfully
+2025-04-29 15:56:12,366 - INFO - src.analyse_pipeline - Saved bytes to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-29 15:56:12,386 - INFO - src.extractors.extractor_fusion - Loaded text file successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/job description/job_description.txt
+2025-04-29 15:56:12,397 - INFO - utils.llm_client - LLMClient initialized successfully.
+2025-04-29 15:56:12,397 - INFO - src.extractors.extractor_fusion - Sending extraction request to LLM: openai / gpt-4o
+2025-04-29 15:56:12,397 - INFO - utils.llm_client - LLM request initiated. Vendor: openai, Model: gpt-4o
+2025-04-29 15:56:12,397 - INFO - utils.llm_client - Attempt 1/4
+2025-04-29 15:56:12,397 - INFO - utils.llm_client - ChatGPT API call initiated with model: gpt-4o
+2025-04-29 15:56:26,337 - INFO - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-29 15:56:26,350 - INFO - utils.llm_client - ChatGPT API call successful. Model: gpt-4o
+2025-04-29 15:56:26,350 - INFO - utils.llm_client - Successfully fetched LLM response from openai using model gpt-4o.
+2025-04-29 15:56:26,350 - INFO - src.extractors.extractor_fusion - ✅ LLM responded successfully. Response length: 4312
+2025-04-29 15:56:26,353 - INFO - src.extractors.extractor_fusion - Saved extracted JSON successfully: /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/job_description.json
+2025-04-29 15:56:26,353 - INFO - src.extractors.extractor_fusion - ✅ Extraction and JSON save completed.
+2025-04-29 15:56:26,353 - INFO - src.analyse_pipeline - Job description extracted successfully
+2025-04-29 15:56:26,354 - INFO - src.analyse_pipeline - Total chunks to process: 2
+2025-04-29 15:56:26,793 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-29 15:56:26,794 - INFO - src.analyse_pipeline - Total extracted texts to process: 17
+2025-04-29 15:56:26,892 - INFO - src.analyse_pipeline - NER output from extracted texts saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/resume_ner.jsonl
+2025-04-29 15:56:26,893 - INFO - src.analyse_pipeline - Total chunks to process: 1
+2025-04-29 15:56:27,048 - INFO - src.analyse_pipeline - NER output saved to /Users/chandanmohan/Desktop/smart-resume-builder/artifacts/processed/jb_ner.jsonl
