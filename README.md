@@ -56,7 +56,7 @@ Final-Project-GroupX/
 
 ## 📬 Output
 - 📄 Resumes optimized for ATS
-- 📧 Sent to user’s email
+- 📧 Sent to user’s emails
 - 🗣️ Editable through voice prompts
 
 ## 👥 Team
